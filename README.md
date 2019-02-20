@@ -9,15 +9,72 @@
 -------------------
 
  * lektor - Der Static-Site Generator & CMS
- * sassc  - Precompiler für CSS-Dateien
- * rsync  - Zum deployen
+ * git-lfs - Git mit unterstützung für große binärblobs
+ * sassc  - Precompiler für CSS-Dateien ***(optional)***
+ * rsync  - Zum deployen ***(optional)***
+ * imagemagic - wird von lektor für bilder verwendet
+
+### Installationsanleitung:
+
+#### Debian/Ubuntu:
+```bash
+# Installiere pip3:
+sudo apt update
+sudo apt install python3-pip
+
+# installiere lektor
+pip3 install lektor --user
+
+# installiere abhängigkeiten:
+sudo apt install imagemagic ruby-sass rsync
+
+# installiere git-lfs
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+```
+
+#### Archlinux
+```
+# Installiere pip3:
+sudo pacman -Suy
+sudo pacman -S python-pip
+
+# installiere lektor
+pip3 install lektor --user
+
+# installiere abhängigkeiten:
+sudo pacman -S imagemagic ruby-sass rsync git-lfs
+```
+
 
  Verwendung:
 ==================
 
-* Navigiert zum Wurzelordner des Lektor-Projektes (der Ordner mit der <name>.lectorproject Datei).
-* Gebt 'lektor server' ein um die Admin-Oberfläche zu starten.
-* Navigiert in eurem Webbrowser zu 'localhost:5000'
+ Zur Webseite Beitragen - normaler Weg
+------------------------
+
+1.  Dieses Repository forken (übers GitHub Interface)
+2.  Geforktes Repository Clonen (``git lfs clone https://github.com/<Your_Name>/see-base-webseite.git``)
+3.  Öffne deine Komandozeile im geklonten Repository-Fork (``cd see-base-webseite``)
+4.  Lektor starten (``lektor server``)
+5.  Webseite updaten... (``http://localhost:5000/``)
+6.  Lektor Beenden (``Strg. + C``)
+7.  Änderungen commiten (``git add --all; git commit -m "An der Webseite habe ich _____ geändert"``)
+8.  Änderungen hochladen (``git push``)
+9.  Pull Request Stellen (übers GitHub Interface)
+
+ Als see-base Mitglied auf github die Webseite bearbeiten:
+-------------------------------------------------
+
+1.  Dieses Repository clonen (`` git lfs clone git@github.com:ToolboxBodensee/see-base-webseite.git``)
+2.  Neuen branch erstellen (``git checkout -b NEUER_BRANCH``)
+4.  Lektor starten (``lektor server``)
+5.  Webseite updaten... (``http://localhost:5000/``)
+6.  Lektor Beenden (``Strg. + C``)
+7.  Änderungen commiten (``git add --all; git commit -m "An der Webseite habe ich _____ geändert"``)
+8.  Änderungen hochladen (``git push origin NEUER_BRANCH``)
+9.  Pull Request Stellen (übers GitHub Interface)
+10. Auf den master wechseln als vorbereitung fürs nächste mal (``git checkout master; git pull``)
+
     
   *Um Inhalte zu bearbeiten, navigiert auf die zu bearbeitende Seite und klickt auf das Stift-Symbol in der Rechten oberen Ecke.*
 
@@ -61,3 +118,4 @@
     d templates                  - HTML-Templates in welche die Modell/Blockfelder eingebunden werden
     f see-base-web.lektorproject - Metainformationen über das Projekt / Deployment-Adresse
 ```
+
