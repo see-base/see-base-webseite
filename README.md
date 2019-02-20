@@ -1,6 +1,10 @@
  Das Lektorprojekt
 ===================
-*für die see-base Webseite*
+### *für die see-base Webseite*
+
+[![Build Status](https://travis-ci.org/see-base/see-base-webseite.svg?branch=master)](https://travis-ci.org/see-base/see-base-webseite)
+
+[![see-base}(https://raw.githubusercontent.com/see-base/see-base-webseite/master/assets/images/background.svg)](https://see-base.de)
 
  Installation:
 ====================
