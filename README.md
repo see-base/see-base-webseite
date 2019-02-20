@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/see-base/see-base-webseite.svg?branch=master)](https://travis-ci.org/see-base/see-base-webseite)
 
-[![see-base](https://github.com/see-base/see-base-webseite/branch/master/assets/images/background.svg)](https://see-base.de)
+[![see-base](https://see-base.de/images/background.svg)](https://see-base.de)
 
  Installation:
 ====================
