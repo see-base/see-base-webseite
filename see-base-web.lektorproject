@@ -1,0 +1,14 @@
+[project]
+name = see-base-web
+url = https://see-base.de/
+
+[servers.see-base]
+name = see-base
+url = https://see-base.de/
+url_style = absolute
+enabled = yes
+default = yes
+target = rsync://web7@saturn.see-base.de/var/www/clients/client1/web7/web
+
+[packages]
+lektor-atom = 0.2

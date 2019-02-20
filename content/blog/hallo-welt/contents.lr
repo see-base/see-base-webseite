@@ -1,0 +1,44 @@
+title: Hallo Welt!
+---
+author: Talvi
+---
+pub_date: 2017-09-23 18:20
+---
+summary:
+
+Unsere Webseite hat einen neuen Anstrich erhalten! Aber auch unter der Oberfläche hat sich einiges getan.  
+In diesem Blogeintrag werde ich euch ein wenig über die Entwicklung und die verwendete Technik erzählen.
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+## Die see-base hat eine neue Webseite!
+
+Es ist endlich soweit: nach langem Stillstand hat die see-base eine neue Webseite erhalten!  
+
+### Vorgeplänkel
+
+Mit der Gründung unseres Hackerspaces vor etwa zwei Jahren, haben wir uns zugleich eine Domain mit unserem Namen registriert. Damals wussten wir noch nicht so genau, was wir mit unserer Seite machen wollten und haben erstmal ein vielversprechenes content managemant system (CMS) names <a href="https://www.impresspages.org/" target="_blank">ImpressPages</a> eingerichtet und eine rudimentäre Seite aufgebaut.
+
+ImpressPages ist ein CMS, welches verspricht sowohl für den Entwickler als auch für den Endanwender leicht und intuitiv bedienbar zu sein. Nach der Einrichtung fingen wir an uns durch die Dokumentation zu wühlen, um auf deren System aufbauend eine eigene Seite zu entwickeln. Das stellte sich allerdings als schwieriger heraus, als ursprünglich erwartet, da wir einerseits nicht sehr erfahren waren und wir andererseits in der offiziellen Dokumentation kaum brauchbare Informationen für unsere konkreten Umsetzungsversuche fanden. So haben wir uns Stück für Stück das Wissen aus verschiedenen Quellen angeeignet, bis wir zum Schluss eine Webseite veröffentlichten, die zwar brauchbar war, allerdings niemals aus dem Entwicklungsstaduim heraus kam.  
+Nach einigen nur teilweise erfolgreichen Versuchen, die alte Webseite auf Vordermann zu bringen, lag die Webseite für kanpp ein halbes Jahr unberührt auf unserem Server...
+
+Vor ein paar Monaten haben wir entschieden, dass es so nicht weitergehen kann und dass wir entweder unser ImpressPages Layout vervollständigen, oder uns nach einem neuen System umsehen sollten. Anlass dafür war eine Erwähnung unseres Spaces auf heise.de, welche eine Reportage über die Makerfaire in Friedrichshafen verfasst hatte, an der wir Teilgenommen haben. Das gab uns den Antrieb unsere Webseite für jene, die dem Link auf heise.de zu unserer Webseite gefolgt sind, etwas ansehnlicher zu machen. Auf der Suche nach einem neuen System stieß kr0l auf <a href="https://getlektor.com" target="_blank">Lektor</a>, einem statischen Webseitengenerator, der trotzdem CMS-Elemente anbietet. Dieses System klang für uns so vielversprechend, dass wir dem ganzen eine Chance geben und unsere nächste Version der Webseite mit Lektor bauen wollten.
+
+### Die Entwicklung einer neuen Seite mit Lektor
+
+Als Basis für das neue Layout haben wir das Alpha-Template von <a href="https://html5up.net" target="_blank">HTML5 UP</a>, welches wir dank seiner Lizenz einfach verwenden und bearbeiten konnten, auf unsere Bedürfnisse angepasst und anschließend mit generischen Lektor-Blöcken, die später über die Admin-Oberfläche mit Inhalt gefüllt werden können, versehen. Lektor verwendet hierfür <a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a> als Unterbau, einer Template-Engine die in ihrer Syntax Python ähnelt und selbst auch in Python geschrieben ist.  
+Mit Hilfe der Lektoreigenen Dokumentation, der von Jinja2, sowie einigen Kommentaren und Anleitungen im Internet, haben wir die neue Webseite innerhalb von 3 Wochen fertigstellen können, bis sie schließlich letzte Woche die alte Webseite ersetzt hat.
+
+### Was ist neu?
+
+Grundlegend beinhaltet diese Webseite die gleichen Elemente, wie unsere alte. Eine Startseite, welche repräsentativ alle Inhalte der see-base zusammenfasst, einen Blog, in dem wir über aktuelle oder allgemein interessante Themen schreiben, eine Übersicht über unsere Projekte, einer Bildergalerie und zuletzt einer Kontaktseite.  
+Ein großer Unterschied ist, dass unsere Webseite jetzt auch auf mobilen Geräten gut lesbar ist, da sich der Seiteninhalt der Bildschirmgröße des Gerätes anpasst. Neu ist auch die allgemeine Aufmachung, die nun deutlich moderner aussieht und klarer strukturiert ist, sodass sich Inhalte leichter finden lassen sollten. Zudem wurden einige Fehler behoben, die in unserem alten Layout vorhanden waren, wie zum Beispiel, dass manche Bilder sich nicht der Größe des umliegenden Bereiches anpassten und daher andere Inhalte verdeckten.
+
+### Schlusssatz
+
+Natürlich stehen noch einige Sachen auf unserer ToDo-Liste und es werden noch einige kleine Änderungen und vor allem mehr Inhalt folgen. Solltet ihr einen Verbesserungsvorschlag haben, oder euch ein Fehler auffallen sind wir für Feedback gerne offen!
+
+-- Talvi

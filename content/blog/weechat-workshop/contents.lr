@@ -1,0 +1,37 @@
+title: weechat Workshop
+---
+author: L3D
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+ [WeeChat](https://weechat.org/), der erweiterbare Chat Client.
+------
+![Weechat Logo](https://weechat.org/media/images/weechat_logo_large.png "Weechat")
+ Schnell — Leicht — freie Software 
+-----
+
+
+
+Weechat ist ein moderner Chat Client mit textbasierter Oberfläche.
+
+In diesem Workshop geht es darum, WeeChat kennen zu lernen und diesen in seiner eigenen Umgebung zu integrieren. So bietet WeeChat nicht nur die Möglichkeit sich zu IRC Servern zu verbinden, sondern auch zu anderen Kommunikationskanälen wie zB. Jabber und Matrix.
+Auf matrix.bodensee.space betreibt die see-base seit kurzen einen eigenen Matrix Server, den gilt es in diesem Workshop auch ein wenig anzuschauen und unter die Lupe zu nehmen.
+
+![Matrix](https://upload.wikimedia.org/wikipedia/commons/1/18/Matrix_logo1.png "Matrix")
+
+```
+Der Workshop findet am Samstag, den 30. Juni 2018 um 17:00 Uhr statt.
+Im Hackerspace see-base bei der Waldorfschule Überlingen.
+Anschließend wird gegrillt.
+```
+
+Standort der see-base: [OSM](https://www.openstreetmap.org/node/4690517051)
+
+Da es in diesem Workshop zu großen Teilen um das ausprobieren von WeeChat geht, ist es zum empfehlen seinen eigenen Computer mit zu bringen.
+---
+pub_date: 2018-06-21 23:42
+---
+summary: Am Samstag, den 30. Juni 2018 findet bei uns ein WeeChat Workshop statt.

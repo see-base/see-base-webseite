@@ -1,0 +1,24 @@
+title: ansible Rolen prüfen
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+[Ansible](https://www.ansible.com/) ermöglicht die einfache automatisierung von IT Systemen.
+
+Die geschieht durch Ansible Playbooks, die unterschiedliche Ansible Rollen beinhalten in denen die einzelnen tasks definiert sind, die automatisiert werden sollen.
+#### body_text ####
+text:
+
+Nun möchte man aber wenn man eine Ansible Rolle schreibt, diese am besten auch gleich getestet haben, ohne sie selber ausführen zu müssen.
+
+Dafür gibt es auf [travis-ci.com](https://blog.travis-ci.com/2017-11-30-testing-ansible-roles-using-docker-on-travis) einen Post dazu, wie das gemacht werden kann.
+
+Dies wurde von L3D auch in [vielen](https://github.com/DO1JLR/role_dotfiles) seiner Rollen nachgebaut und eingesetzt.
+
+Interessiert dich dieses Thema nächer? Komm doch vorbei und lass uns darüber Disskutieren. Melde dich am besten vorher kurz per IRC oder mail an.
+---
+category: Anleitung
+---
+description: Automatisierte überprüfung von ansible Rollen mit travis-ci und docker

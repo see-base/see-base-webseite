@@ -1,0 +1,23 @@
+_model: knowledgebase
+---
+title: Knowledgebase
+---
+body: 
+---
+body_blocks_1:
+
+#### body_text ####
+text:
+
+Die see-base Knowledgebase ist eine **Sammlung von Anleitungen, wissenswerten Informationen oder allgemein interessanten Inhalten**, die wir über die Zeit gesammelt haben. Diese Seite soll dabei als Nachschlagewerk dienen und dabei helfen, Informationen die wir einst mühsam aus verschiedenen Teilen des Internets zusammengesucht haben, anderen Leuten in einer möglicht gut aufbereiteten Form zur Verfügung zu stellen.
+
+Die Inhalte verteilen sich dabei über ein breites Spektrum: von der Insallation eines Arch Linux-Systems, der richtigen Verwendung von 3D-Druckern, über Anleitungen wie man Windows-Spiele möglchst einfach auf Linux zum Laufen bringt, bis hin zu Programmier-Referenzen oder Cheat-Sheets für verschiedene Programme. Alles was wir für relevant halten erhält hier einen Eintrag,. So wird die Knowledgebase mit der Zeit um Stück für Stück erweitert.
+---
+body_blocks_2:
+
+#### body_text ####
+text:
+
+####Wie Beitragen?
+
+Das Nachschlagewerk kann von jedem Mitglied der see-base erweitert werden. Nötig ist dafür lediglich der Zugriff auf das Lektor-Projekt dieser Webseite.  Sollte jemand von außerhalb der see-base den Wunsch haben hier einen Eintrag hinzufügen zu kommen, schreibt uns gerne im IRC oder per Mail an, oder kommt einfach mal bei uns im Space vorbei und fragt dort nach. Wir sind gerne offen für weitere Vorschläge!

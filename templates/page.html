@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<section id="main" class="container">
+    <header>
+        <h2>{{ this.title }}</h2>
+    </header>
+    <div class="box">
+    {% if this.body_blocks %}
+        {% for blk in this.body_blocks.blocks %}
+        {{ blk }}
+        {% endfor %}
+    {% endif %}
+    </div>
+</section>
+{% endblock %}

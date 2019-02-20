@@ -1,0 +1,31 @@
+Allgemein:
+
+Termin-Seite
+Generiertes Whitespace reduzieren (Jinja2-Syntax anpassen)
+Bilder-Zoom-Bug beheben
+
+---
+
+Blog:
+
+Weitere Flowblocks hinzufügen (z.B. Galerie-Element, OSM-Karte, Videoeinbettung, etc.)
+
+---
+
+Galerie:
+
+Slideshow einbinden
+Sortierstruktur (was anderes als Ordnername)
+
+---
+
+Knowledgebase:
+
+Ein Quasi-Wiki für Anleitungen
+
+---
+
+Kontakte:
+
+Für Kontaktformular: 
+Java-Script Mail senden implementieren, Spam-Schutz einbauen

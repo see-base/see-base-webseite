@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<section id="main" class="container">
+    <header>
+        <h2>{{ this.title }}</h2>
+    </header>
+    <section class="box">
+    {{ this.body }}
+    </section>
+     {% if this.show_form %}
+        
+    <section class="box">
+    <h3>Kontaktformular</h3>
+        <form method="post" action="#">
+            <div class="row uniform 50%">
+	            <div class="6u 12u(mobilep)">
+		            <input type="text" name="name" id="name" value="" placeholder="Name" />
+	            </div>
+	            <div class="6u 12u(mobilep)">
+		            <input type="email" name="email" id="email" value="" placeholder="E-Mail" />
+	            </div>
+            </div>
+            <div class="row uniform 50%">
+	            <div class="12u">
+		            <input type="text" name="subject" id="subject" value="" placeholder="Betreff" />
+	            </div>
+            </div>
+            <div class="row uniform 50%">
+	            <div class="12u">
+		            <textarea name="message" id="message" placeholder="Schreibe uns eine Nachricht" rows="7"></textarea>
+	            </div>
+            </div>
+            <div class="row uniform">
+	            <div class="12u">
+		            <ul class="actions align-center">
+			            <li><input type="submit" value="Send Message" /></li>
+		            </ul>
+	            </div>
+            </div>
+        </form>
+    </section>
+	{% endif %}
+</section>
+{% endblock %}

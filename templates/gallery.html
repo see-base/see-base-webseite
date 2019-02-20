@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% from "macros/album.html" import render_album_list %}
+{% from "macros/album.html" import render_image_list %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<section id="main" class="container">
+    <header>
+        <h2>{{ this.title }}</h2>
+    </header>
+    <div class="box special">
+        {% if this._path == '/galerie' %}
+            {{ render_album_list(this) }}
+        {% else %}
+            {{ render_image_list(this) }}
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

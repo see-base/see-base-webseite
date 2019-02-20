@@ -1,0 +1,45 @@
+{% macro render_album_list(gallery) %}
+<div class="box alt">
+    {% for album in gallery.children %}
+        {% set image = album.attachments.images.first() %}
+        {% set i %}
+            <div class="4u">
+                <a href="{{ album|url }}" class="image fit zoom-in"><img src="{{ image.thumbnail(360)|url }}" alt="" /></a>
+                <h4>{{ album.title }}</h4>
+            </div>
+        {% endset %}
+        {% if loop.index % 3 == 1 %}
+            <div class="row no-collapse 50% uniform">
+                {{ i }}
+        {% elif loop.index % 3 == 0 %}
+            {{ i }}
+            </div>
+            <hr />
+        {% elif loop.last %}
+            {{ i }}
+            </div>
+        {% else -%}
+            {{ i }}
+        {% endif %}
+    {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro render_image_list(gallery) %}
+<div class="box alt">
+    {% for image in gallery.attachments.images %}
+        {% set i %}
+            <div class="4u"><a href="{{ image|url }}" class="image fit zoom-in"><img src="{{ image.thumbnail(360)|url }}" alt="" /></a></div>
+        {% endset %}
+        {% if loop.index % 3 == 1 %}
+            <div class="row no-collapse 50% uniform">
+                {{ i }}
+        {% elif loop.index % 3 == 0 or loop.last %}
+            {{ i }}
+            </div>
+        {% else -%}
+            {{ i }}
+        {% endif %}
+    {% endfor %}
+</div>
+{% endmacro %}

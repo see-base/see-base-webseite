@@ -1,0 +1,73 @@
+title: Make see-base great again
+---
+author: L3D
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+Leider haben sich die Renovierungsarbeiten der Schule länger hingezogen wie erwartet. So dass diese nicht wie ursprünglich geplant eine Woch vor Ende der Sommerferien fertig waren sondern anfang Oktober für beendet erklärt wurden.
+
+Nun haben wir eine leere see-base, die wir selber Einrichten können... Hier bedeutet leer aber, das weder eine Türe eingebaut ist, noch das die Wände noch aus den rohen Rigibs Platten bestehen. Auch die Beleuchtung exestiert nur als Baustrahler.<br/>
+Für einen Hackerspace sollte das aber kein Problem sein und wir haben begonnen uns der Herausforderung zu stellen und damit begonnen eine Grundierung auf den Wänden aufzutragen und diese mit weiß für weitere Farbkünste vorzubereiten.
+Auch haben wir Licht in den dunklen see-base Keller gebracht und Deckenlampen montiert und angeschlossen.
+#### body_text ####
+text:
+
+ Planung
+------------------------
+Ohne das ein Zeitdruck herscht haben wir die Zeit *(neben der Schule die begonnen hat oder der Arbeit, die die Menschen so nachgehen)* genutzt und uns einen Plan überlegt, wie die see-base aussehen soll.
+Dies ist so weit gegangen, dass es die see-base nun als 3D Modell gibt *(bisher non-public/closed source)* in dem ~~*alle Mitglieder*~~ ausgewählte Mitglieder der see-base die Möglichkeit hatten die Raumaufteilung, Einrichtung und auch die Farben der Wände zu planen und als entwurf schonmal vor Augen zu haben. Möglicherweise werden wir das mal veröffentlichen.
+#### body_image ####
+image: chaos.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 42
+#### body_image ####
+image: chaos2.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 42
+#### body_text ####
+text:
+
+ DEADLINE "nächste Woche"
+----------------------------------------
+Wie das in einer genossenschaftlich geführten Schule nun mal ist, gibt es da viele Menschen mit vielen Meinungen, Ideen und Vorstellungen. Und so wurde uns letzten Freitag mitgeteilt, dass es nun eine neue verwendung für die ehemalige Weberei gibt und ob wir nicht so schnell wie möglich - spätestens diesen Oktober - die Weberei wieder räumen können und in unseren Raum ziehen sollen.
+
+Aktuell versuchen wir den verantwortlichen Personen mitzuteilen, dass das leider nicht geht. Wir können nicht innerhalb einer Woche in der jeder von uns Beschäftigt ist und nicht einfach so Urlaub nehmen kann oder sich für so etwas vom Unterricht befreien kann einen kompletten Hackerspace fertig einrichten. Außerdem haben wir immer noch keine Türe bekommen. Diese wollte die Schule für uns Bestellen und Einbauen lassen. Hierbei gab es aber anscheinend Probleme und es verzögert sich etwas.
+
+Trotzdem sollten wir nun die see-base wieder einrichten und in einen coolen Hackspace verwandeln.
+#### body_image ####
+image: farbe.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 42
+#### body_text ####
+text:
+
+  Wir brauchen deine Hilfe
+------------
+Nun ist jede helfende Hand gefragt um den Space neu einzurichten.
+
+Wir haben damit begonnen Leitungsrohre mit Rigibs zu verkleiden und nerdige Motive an die Wände zu malen.
+Die nächsten Schritte wird es sein, Arbeitsplätze und Regale in die see-base zu bauen. Hier haben wir uns ausgedacht Holzreste vom Sägewerk zu nehmen. Diese wollen wir abschleifen und zurechtsägen. Dies ergibt dann hoffentlich tolle Regalbretter und Arbeitsflächen.
+
+Wir wollen einmal um den ganzen Space einen Kabelkanal führen, in dem sowohl Kupfer- als auch Internet aus Glasfasern verfügbar ist.
+Wir wollen am Eingang eine Gaderobe bauen. Und einen Vorhang mit dem man die Lounge und die Arbeitsflächen trennen kann.
+
+Wenn du Lust hast mit zu helfen, dann komm Samstags einfach vorbei oder melde dich bei uns. Sowohl Mail als auch IRC sind da eine gute Lösung.
+---
+pub_date: 2018-10-21 00:42
+---
+summary: Wir haben begonnen die see-base wieder einzurichten. Nun haben wir plötzlich eine Deadline bekommen und sollten innerhalb 1 Woche die Weberei räumen und wieder einziehen. **Dafür brauchen wir aber eure unterstützung!**

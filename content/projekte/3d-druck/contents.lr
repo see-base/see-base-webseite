@@ -1,0 +1,90 @@
+title: 3D-Druck
+---
+preview_picture: drucker.jpg
+---
+summary: Seit einiger Zeit befinden sich zwei 3D-Drucker in unserem Raum, mit denen wir allerlei Figuren, Bauteile und Gimmicks drucken können.
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+3D Druck ist mittlerweile ein fester Bestandteil der Hacker- und Makerszene. Wie könnte es auch anders sein? Es gibt so viele Anwendungsfälle und mittlerweile hat man auch keine Schwierigkeiten mehr, Drucker mit erstaunlich guter Qualität für wenig Geld zu bekommen. 
+
+####Unsere Druckergeschichte:
+
+Wir hier in der see-base haben zwei Drucker. Der erste Drucker den wir uns besorgt hatten war ein CTC Duplicator 4, also ein Makerbot China Clone. Mit dem Drucker hatten wir einen nicht gerade einfachen Einstieg, da wir erstmal die Firmware upgraden mussten, damit der Drucker überhaupt vom Computer erkannt wurde. Wir hatten damals auch noch keine Erfahrung mit Slicer-Software und haben aus diesem Grund  unsere ersten Versuche mit einer mitgelieferten, total veralteten Software von Makerbot gemacht, die auch nur auf Windows lief. Trotz Allem haben wir nach ein paar Stunden geschafft die ersten kleinen Modelle zu drucken, die Qualität war aber noch, mit ein paar Ausnahmen, nicht sehr schön. 
+Wir hatten auch das Problem, dass der CTC Duplicator 4 kein gcode, sondern x3g Code genommen hat, deshalb hatten wir auch eine sehr eingeschänkte Auswahl an Slicer-Software.  
+Bald entdeckten wir die Software OctoPrint, die wir auf einem Raspberry Pi laufen lassen haben, so dass der Drucker über ein Webinterface angesteuert werden konnte. Es gab auch ein Plugin für OctoPrint mit dem gcode in x3g umgerechnet werden konnte, sodass wir auch mit gcode den Duplicator bedienen konnten. Da wir jetzt also keinerlei Formatbarrieren mehr hatten, haben wir uns zum Slicen die Software Cura ausgesucht, da diese Software von der Oberfläche schön wirkte und die besten Ergebnisse lieferte. 
+
+Ein paar Monate später haben wir uns einen zweiten Drucker besorgt, diesmal einen Prusa I3. Wir hatten zwar ein paar kleine Probleme beim Zusammenbau, weil uns durch einen blöden Anschlussfehler zwei Arduinos durchgebrannt sind, aber sobald der Drucker mal lief, waren wir von ihm sehr begeistert. 
+Im Vergleich zu dem Duplicator lieferte der Prusa deutlich schönere Ergebnisse, auch die Druckzeit war geringer. Außerdem gab es durch das OctoPrint Plugin kleinere Bugs, die wir beim Prusa einfach nicht hatten. 
+
+<div class="box alt special">
+            <div class="row no-collapse 50% uniform">
+            <div class="4u">
+                <a href="./alle-drucker.jpg" class="image fit zoom-in"><img src="./071alle-drucker-360.jpg" alt="" /></a>
+                <h5>Beide Drucker</h5>
+           </div>
+            <div class="4u">
+                <a href="./prusai3.jpg" class="image fit zoom-in"><img src="./073prusai3-360.jpg" alt="" /></a>
+                <h5>Prusa I3</h5>
+            </div>
+            <div class="4u">
+                <a href="./duplicator.jpg" class="image fit zoom-in"><img src="./072duplicator-360.jpg" alt="" /></a>
+                <h5>CTC Duplicator 4</h5>
+            </div>
+</div>
+</div>
+
+Diese beiden Drucker wurden von uns etwa 2 Jahre lang benutzt, bis sie am ende teils defekt und nicht gewartet waren. Das Drucken machte nicht mehr so viel Spaß, da so viel zu reparieren war. Wie hatten nun sehr viel Glück, denn bei einem Maker-Slam auf der Maiker Faire Bodensee 2018 gewannen wir einen nagelneuen Prusa I3 MK3 der sofort zusammengebaut wurde. Wir waren sehr positiv überrascht wie einfach alles, im Vergleich zu den anderen Druckern gehen. Es gab für alles detaillierte Dokumentationen und mit der Anleitung war der Zusammenbau und die erste Inbetriebnahme nach 8 Stunden getan. Der neue Drucker funktionierte einwandfrei und die Ergebnisse waren besser als je zuvor.
+
+<div class="box alt special">
+            <div class="row no-collapse 50% uniform">
+            <div class="4u">
+                <a href="./mk3-1.jpg" class="image fit zoom-in"><img src="./mk3-1.jpg" alt="" /></a>
+           </div>
+            <div class="4u">
+                <a href="./mk3-2.jpg" class="image fit zoom-in"><img src="./mk3-2.jpg" alt="" /></a>
+            </div>
+            <div class="4u">
+                <a href="./mk3-3.jpg" class="image fit zoom-in"><img src="./mk3-3.jpg" alt="" /></a>
+            </div>
+</div>
+</div>
+
+Durch den MK3 hatten wir jetzt drei 3D Drucker im Space, was eindeutig zu viel für unseren kleinen Raum war, außerdem waren ja zwei der drei Drucker Wartungsbedürftig. So viel es uns leicht, unseren ersten Drucker, dem Duplicator 4 der Toolbox Bodensee zu schenken, in der Hoffnung das Sie damit etwas anfangen kann. 
+
+####Was wir so Drucken:
+
+Wie vermutlich in allen Hacker- und Makerspaces ist es total unterschiedlich was gedruckt wird, wir haben aber ein paar Modelle, die so etwas wie Lückenfüller sind.  
+Die vermutlich meist gedruckten Objekte bei uns sind <a href="http://fillygons.feuermurmel.ch/" taget="_blank">Fillygons</a>. Entwickelt wurden diese vom <a href="https://ccczh.ch/" target="_blank">CCCZH</a>.
+
+> " Fillygons sind kleine Polygone, die sich über Gelenke an jeder Kante beliebig miteinander verbinden lassen. Die 3D-Modelle werden automatisch aus Kantenlänge, Zwischenwinkeln und vielen anderen anpassbaren Parametern generiert."
+
+Uns haben diese Polygone sehr fasziniert, da man mit ihnen sehr Schöne Objekte zusammenbauen kann, Fillygons sind in unseren Augen so etwas wie ein besseres Nerd-Lego. Wir haben Fillygons auch viel verwendet, um unsere Druckereinstellungen anzupassen. Auch wenn man z.B. ein Fillygon das man vor mehreren Monaten und eines das man erst gerade gedruckt hat vergleicht, kann man gut überprüfen ob der Drucker mal wieder neu justiert werden müsste, ob die Einstellungen besser oder Schlechter sind o.Ä.  
+Natürlich können auch alle unsere Mitgliederinnen drucken was sie wollen.
+
+<div class="box alt special">
+            <div class="row no-collapse 50% uniform">
+            <div class="4u">
+                <a href="./filly1.jpg" class="image fit zoom-in"><img src="./filly1.jpg" alt="" /></a>
+           </div>
+            <div class="4u">
+                <a href="./filly2.jpg" class="image fit zoom-in"><img src="./filly2.jpg" alt="" /></a>
+            </div>
+            <div class="4u">
+                <a href="./filly3.jpg" class="image fit zoom-in"><img src="./10filly3-360.jpg" alt="" /></a>
+            </div>
+            </div>
+            <div class="row no-collapse 50% uniform">
+            <div class="4u">
+                <a href="./filly4.jpg" class="image fit zoom-in"><img src="./11filly4-360.jpg" alt="" /></a>
+            </div>
+            <div class="4u">
+                <a href="./filly5.jpg" class="image fit zoom-in"><img src="./12filly5-360.jpg" alt="" /></a>
+            </div>
+</div>
+</div>
+---
+sort: 5

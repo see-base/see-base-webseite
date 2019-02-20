@@ -1,0 +1,36 @@
+_model: knowledgebase-post
+---
+title: DMX-tools
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+Work in progress...
+
+###Lichtsteuerung über DMX
+
+Hier entsteht eine kleine Beschreibung/Anleitung eines DMX Setups mit **QLC+** zusammen mit **Capture Nexum** und einem Rasberry Pi DMX Interface.
+TODO fuer kr0l: Sag bescheid wenn das hier fertig ist und man sich das mal durchlesen darf! Klingt spannend, aber ist ja noch nicht viel da... mach mal!
+
+####QLC+
+
+QLC+ (Q Light Controller Plus) ist eine cross-platform Open Source Software mit der es nicht nur möglich ist DMX Signale zu senden, die Software kann auch MIDI Geräte ansteuern die man dann z.B. als "Lichtpult" benutzen kann, zudem ist es natürlich möglich z.B. Audioeinspieler o.ä. über QLC+ auszugeben und natürlich unterstützt QLC+ nicht nur ein weites Spektrum an Interfaces sondern kann auch die Protokolle ART-net, OSC, E1.31, ENTTEC Wing, HID und OLA sprechen.
+
+####Kleines QLC+ Tutorial:
+
+Zum installieren kann man auf der <a href="http://www.qlcplus.org/downloads.html" tarbet="_blank">QLC+ Webseite</a> ein Windows, masOS oder Linux (.deb) Paket herunter laden. Für Arch gibt's das ganze auch im Userreposetory und es kann mit folgendem Befehl installiert werden:
+````
+sudo yaourt -S qlcplus
+````
+
+Der erste schritt wenn das Programm installiert ist, ist das Interface, bzw den DMX Controller anzuschließen.  
+Hierzu muss man nur auf den tab **"Inputs/Outputs"** an der Unteren Symbolleiste klicken und nun sieht man Links standardmäßig 4 DMX Universen und rechts eine liste in der man die Inputs und Outputs auswählen kann.  
+Jetzt kommt es darauf an, was für einen DMX Controller man anschließen möchte, in diesem Beispiel ist es ein USB Controller. Dieser sollte Automatisch unter den **"DMX USB"** Optionen auftauchen.
+---
+description: Tolle DMX Programme zum Beleuchten von Zeugs
+---
+category: Artikel
+---
+_hidden: yes

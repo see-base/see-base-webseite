@@ -1,0 +1,37 @@
+title: Feinstaubalarm!
+---
+author: kr0l
+---
+pub_date: 2017-09-23 21:30
+---
+summary: Am 23. September 2017 gab es einen Vortrag zum Thema Feinstaub in der Toolbox Bodensee.
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+##Luftdaten
+
+Feinstaubalarm, dass gab es in den letzten Jahren ziemlich häufig in Stuttgart, dass liegt daran dass in Deutschland der Grenzwert von 50µg/m³ regelmäßig überschritten wird und dann heißt es, nach Möglichkeit das Auto zu Hause lassen und die öffentlichen Verkehrsmittel bzw. das Fahrrad nutzen. 
+
+###Doch wie werden die Feinstaubwerte ermittelt?
+
+Hierfür gibt es insgesamt 4 Messstationen in Stuttgart, die einen Wert am Tag liefern, dass das nicht reicht um detaillierte Statistiken zu erstellen ist logisch. Deshalb wurde das Projekt <a href="http://luftdaten.info" target="_blank">luftdaten.info</a> gegründet, mit dem Ziel stuttgartweit 300 Sensoren aufzustellen, um eine flächendeckende Karte zu bekommen und mehr als nur einen Messwert am Tag. Dieses Ziel wurde längst erreicht, das Projekt hat sich mittlerweile nicht nur bundesweit ausgebreitet, sondern ist sogar schon in andere Länder gewandert. Auf <a href="http://maps.luftdaten.info" target="_blank">maps.luftdaten.info</a> gibt es eine genaue Karte, auf der die aktuellen Messwerte zusehen sind, die Werte sind in keinem Fall älter als zweieinhalb Minuten, denn so oft werden die Werte erhoben. Gemessen werden diese Werte mit einem ungefähr 20€ teurem Ersatzteil einer Klimaanlage <a href="https://de.aliexpress.com/wholesale?site=deu&SortType=price_asc&shipCountry=de&SearchText=sds011&CatId=523" target="_blank">SDS011</a>, dass mit einem <a href="https://de.aliexpress.com/w/wholesale-nodemcu-v3-esp8266-ch340.html?spm=2114.010208.0.0.2zt6Ca&initiative_id=SB_20170101021508&site=deu&groupsort=1&SortType=price_asc&g=y&SearchText=nodemcu+v3+esp8266+ch340" target="_blank">ESP8266</a> (3€) verbunden wird. Wenn man möchte kann man auch noch einen <a href="https://de.aliexpress.com/wholesale?site=deu&SortType=price_asc&shipCountry=de&SearchText=dht22&CatId=523" target="_blank">Sensor</a> für Temperatur und Luftfeuchtigkeit dazu bauen, außerdem braucht man noch ein paar Käbelchen. Insgesamt kommt man so auf unter 40€ wenn man in China bestellt, wo die Teile produziert werden. 
+
+Für 40€ bekommt man natürlich keine hoch genaue Messstation, dass ist aber auch gar nicht das Anliegen des Projekts, luftdaten.info möchte lediglich eine Alternative zu den offiziell gemessenen Werten sein und eben durch Masse und häufigerer Messung genauere Daten sammeln. Trotz allem ist der Sensor relativ gut und wirklich preiswert. Messen tut der Sensor übrigens PM10 und PM2,5 Werte, die offiziellen stellen messen bis jetzt nur PM10, was aber bald geändert werden soll.
+
+###Erkenntnisse durch die vielen Werte:
+
+Durch das breite Spektrum an Werten die Luftdaten.info bereit stellt, kann man Tendenzen wie den Berufs- oder Feierabendverkehr erkennen. Es gibt auch ein paar Tage im Jahr, an denen deutschlandweit die Grenzwerte weit überschritten werden und zwar Silvester. An Silvester kann es sogar vorkommen, dass die Feinstaubwerte bis über 1000µg/m³ steigen, da die offiziellen Stellen aber nur einen Wert am Tag messen, bekommen sie das weit nicht so deutlich mit. 
+Die Spitze hier ist natürlich um 0 Uhr, doch damit ist es nicht vorbei, denn es dauert 2-3 Tage bis die Feinstaubwerte wieder in den normalen Bereich zurückkehren. Über die Luftdaten-Karte kann man jetzt z.B. anschauen, wo diese Belastung am geringsten ist und evtl. das in z.B. die Wohnungssuche einfließen lassen, denn:
+
+###Feinstaub ist nicht harmlos!
+
+Feinstaub hat ab einer gewissen Größe so etwas wie einen One-Way Ticket in den Körper hinein, denn die Nasenschleimhäute können nichts unter 10PM weg filtern. Einmal drinnen setzt sich der Feinstaub dann z.B. in der Lunge ab und kann die verschiedensten Arten von Beschwerden verursachen. Konkret fördert Feinstaub die Verstärkung von Allergiesymtomen, die Zunahme von asthmatischen Anfällen, Atemwegsbeschwerden, Lungenkrebs und Beeinträchtigungen des Nervensystems. Auch Auswirkungen auf Herz-Kreislauf-Erkrankungen werden angenommen. 
+
+Deshalb ist es wichtig dass nicht einfach zu ignorieren, sondern selber Sensoren aufzustellen, um deutlich machen zu können, dass genau hier ein riesen großes Problem liegt.
+
+###Mach mit!
+
+Hoffentlich möchtest du jetzt selber aktiv werden. Hierzu kannst du dich auf <a href="http://luftdaten.info" target="_blank">luftdaten.info</a> informieren, dort gibt es Bauanleitungen, FAQs, Bestellisten und viele Informationen über das Projekt. Wenn du Hilfe beim Flashen oder Zusammenbauen brauchst, kannst du gerne in die <a href="https://toolbox-bodensee.de" target="_blank">Toolbox Bodensee</a> oder zu uns in die see-base kommen, wir helfen dir sehr gerne dabei.

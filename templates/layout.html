@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Startseite{% endblock %} — see-base</title>
+        <meta name="description" content="Die see-base ist ein Hackerspace am Bodensee. Hier können Hacker und Häcksen hacken und häckseln!" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{ '/css/main.css'|url }}">
+        <link rel="icon" href="/images/favicon.png" type="image/png">
+    </head>
+    <body{% if this._path == '/' %} class="landing"{% endif %}>
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="{{ '/'|url }}" title="Ist die Rakete grün, ist der Space offen." class="icon fa-rocket">see-base</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li{% if this._path == '/' %} class="active"{% endif %}>
+                            <a href="{{ '/'|url }}">Startseite</a></li>
+                        {% for id, item in bag('navbar').items() %}{% if item.label == "Kontakt" %}
+                           <li {% if this._path == '/datenschutz' %}class="active"{% endif %}{% if this._path == "/impressum" %}class="active"{% endif %}{% if this.is_child_of(item.path) %} class="active"{% endif %}>
+                                <a href="{{ item.path|url }}">{{ item.label }}</a>
+                                  <ul><li{% if this.is_child_of(item.path) %} class="active"{% endif %}>
+                                    <a href="/kontakt">Kontakt</a> 
+                                  </li><li{% if this._path == '/datenschutz' %} class="active"{% endif %}>
+                                    <a href="/datenschutz">Datenschutz</a>
+                                  </li><li{% if this._path == '/impressum' %} class="active"{% endif %}>
+                                    <a href="/impressum">Impressum</a>
+                                    </li></ul>{% else %}
+                            <li{% if this.is_child_of(item.path) %} class="active"{% endif%}>
+                                <a href="{{ item.path|url }}">{{ item.label }}</a>{% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Main -->
+            {% block body %}{% endblock %}
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    {% for label, icon, href in [
+                        ['E-Mail', 'fa-envelope', "mailto:kommunikation@see-base.de"],
+                        ['IRC', 'fa-hashtag', "https://webirc.hackint.org/#irc://irc.hackint.org/#see-base"],
+                        ['Twitter', 'fa-twitter', "https://twitter.com/see_base"],
+                        ['GitHub', 'fa-github', "https://github.com/see-base"],
+                        ['News', 'fa-rss', "https://see-base.de/feed.xml"]
+                    ] %}
+                    <li><a href="{{ href }}" title="{{ label }}" target="_blank" class="icon {{ icon }}"><span class="label">{{ label }}</span></a></li>
+                    {% endfor %}
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Entwickelt von der <i>see-base</i></li>
+                    <li>Design (basierend auf): <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+                    <li>Generiert mit: <a href="https://www.getlektor.com/" target="_blank">Lektor</a></li>
+                    <li><a href="/datenschutz">Datenschutz</a></li>
+                    <li><a href="/impressum">Impressum</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        <script src="{{ '/js/jquery.min.js'|url }}"></script>
+        <script src="{{ '/js/jquery.dropotron.min.js'|url }}"></script>
+        <script src="{{ '/js/jquery.scrollgress.min.js'|url }}"></script>
+        <script src="{{ '/js/skel.min.js'|url }}"></script>
+        <script src="{{ '/js/util.js'|url }}"></script>
+        <script src="{{ '/js/main.js'|url }}"></script>
+
+    </body>
+</html>

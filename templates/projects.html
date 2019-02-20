@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% from "macros/preview-renderer.html" import render_project_article %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<section id="main" class="container">
+    <header>
+        <h2>{{ this.title }}</h2>
+    </header>
+    <section class="box special features">
+      {% for child in this.children %}
+          {% if loop.index % 2 == 1 %}
+              <div class="features-row">
+                  {{ render_project_article(child) }}
+                  {% if loop.last %}
+                      </div>
+                  {% endif %}
+          {% else %}
+                  {{ render_project_article(child) }}
+              </div>
+          {% endif %}
+      {% endfor %}
+    </section>
+</section>
+{% endblock %}

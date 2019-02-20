@@ -1,0 +1,49 @@
+title: Wie Funktioniert IRC
+---
+category: Anleitung
+---
+description: Wie funktioniert dieses IRC? Und wie kann ich mich verbinden?
+---
+body_blocks:
+
+#### body_text ####
+text: Die See-Base ist über den IRC Chat auf <a href="https://hackint.org">HackInt.org</a> erreichbar.
+#### body_image ####
+image: HackInt.png
+----
+zoom: true
+----
+float: right
+----
+width: 60
+#### body_text ####
+text: Dort haben wir den IRC Channel <a href="https://webirc.hackint.org/#irc://irc.hackint.org/#see-base">#see-base</a> auf dem wir untereinander Kommunizieren und uns austauschen.
+#### body_text ####
+text: ## Wie kann man sich mit dem IRC Verbinden?
+#### body_text ####
+text: Der schnellste Weg hierfür ist der Webbasierte Chat. Dieser ist unter <a href="https://webirc.hackint.org/#irc://irc.hackint.org/#see-base">webirc.hackint.org</a> erreichbar.
+#### body_text ####
+text: Erfahrenere IRC-Benutzer benutzen ein Chatprogramm um sich mit dem IRC zu verbinden. Hier gibt es zum Beispiel <a href="https://hexchat.github.io/">HexChat</a> oder <a href="https://www.pidgin.im/">Pidgin</a>.
+#### body_text ####
+text:
+
+
+Fortgeschrittene Nutzer verwenden einen IRC Bouncer. Dieser läuft auf einem Computer, der dauerhaft mit dem Internet verbunden ist. Eine möglichkeit wäre hier, <a href="https://wiki.znc.in/ZNC">ZNC</a> einzusetzen.
+Sehr beliebt ist aber auch, ein Textbasierten IRC Client wie <a href="https://irssi.org/">IrssI</a> oder <a href="https://weechat.org/">WeeChat</a> einzusetzen. Dieser läuft dann zum Beispiel in einer <a href="https://en.wikipedia.org/wiki/Tmux">Tmux</a> Session und ist dann Beispielsweise über SSH und der passenden <a href="https://f-droid.org/en/packages/com.ubergeek42.WeechatAndroid/">WeeChat App</a> von überall aus (wo SSH funktioniert) erreichbar.
+#### body_text ####
+text:
+
+## Ich komm nicht in den Channel rein???
+
+Da vor kurzen relativ viel SPAM in unserem IRC Channel war, haben wir hier etwas agressivere Regeln gesetzt.
+Nun kann man sich nicht mehr Unverschlüsselt mit unseren Channel Verbindung uns muss vorher seinen NickNamen bei HackInt registrieren.
+
+Weitere Informationen dazu gibt es im FAQ bei <a href="https://www.hackint.org/faq#Can_I_register_my_nicknamechannel">HackInt.org</a>.
+#### body_text ####
+text:
+
+## IRC über Matrix, Jabber, Tor etc.
+
+HackInt selber betreibt einige Bridges um den IRC zum Beispiel auch über Matrix erreichbar zu machen.
+Den Channel, den die See-Base verwenden, der heißt ''#see-base''.
+Weitere Informationen gibt es auf <a href="https://www.hackint.org/servers">hackint.org/servers</a>.

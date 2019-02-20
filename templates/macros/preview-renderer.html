@@ -1,0 +1,35 @@
+{% macro render_blog_post(post) %}
+<div>
+    <a class="blog-preview" href="{{ post|url }}">
+        <h3>{{ post.title }}</h3>
+        <p><em>Logbucheintrag vom {{ post.pub_date.strftime('%d.%m.%Y - %H:%M') }}, geschrieben von {{ post.author }}</em></p>
+      {{ post.summary }}
+    </a>
+    <hr />
+</div>
+{% endmacro %}
+
+{% macro render_project_article(article) %}
+<section>
+    <a class="article-preview" href="{{ article|url }}">
+    <span class="image fit zoom-in">
+        {% if article.preview_picture %}
+            <img src="{{ article.preview_picture|url }}" alt="" />
+        {% else %}
+            <img src="../images/defaults/projects.png" alt="" />
+        {% endif %}
+    </span>
+    <h3>{{ article.title }}</h3>
+    {{ article.summary }}
+    </a>
+</section>
+{% endmacro %}
+
+{% macro render_knowledgebase_post(post) %}
+<tr>
+    <td><a href="{% if post.url %}{{ post.url }}{% else %}{{ post|url }}{% endif %}">
+        {% if post.text %}{{ post.text }}{% else %}{{ post.title }}{% endif %}</a></td>
+    <td>{{ post.description }}</td>
+    <td>{{ post.category }}</td>
+</tr>
+{% endmacro %}

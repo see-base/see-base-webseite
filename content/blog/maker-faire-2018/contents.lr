@@ -1,0 +1,196 @@
+title: Maker Faire 2018
+---
+author: kr0l
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+###Ein kleiner Bericht über die Maker Faire 2018
+Dieses Jahr fand die Maker Faire Bodensee am 2. und 3. Juni statt und natürlich waren wir wieder dabei. Da viele unserer Mitglieder auch Mitglied der <a href="https://toolbox-bodensee.de" target="_blank">Toolbox</a> sind, haben wir darauf verzichtet unseren eigenen Stand zu betreiben und haben uns mit der Toolbox zusammengeschlossen.
+Der Hackerspace-Komplex, also der Stand der Toolbox und die Stände von Freifunk Bodensee, dem C3WOC, Hacknology und vom Elektronikmuseum Tettnang, war relativ groß und füllte zusammen etwa 1/8tel der gesamten Messehalle aus. Die Toolbox hatte ihren Platz am unteren Ende und dann ging es nach oben weiter. 
+#### body_image ####
+image: toolboxstand2.jpg
+----
+zoom: true
+----
+float: 
+----
+width: 
+#### body_image ####
+image: toolboxsofen.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 33
+#### body_text ####
+text:
+
+####Der Toolbox Stand 
+Auf diesem Stand war wirklich einiges zu sehen. Von der Floppyorgel, bis zur Retro-Spielecke, in der man auf zwei großen blauen Sofen Spiele spielen konnte, die von ein paar Toolbox Mitgliedern selbst entwickelt wurden. Das ganze hatte nicht nur den Hintergrund Spaß zu haben, sondern auch Werbung für ein neu ins leben gerufene Spielentwicklungstreffen, was am 09.06.2018 in der Toolbox Bodensee stattfand, zu machen.
+Außerdem gab es einen relativ großen 3D Druck Bereich, in dem man einen Prusa, einen Makerbot und einem Multec Drucker beim Drucken zuschauen konnte. 
+#### body_text ####
+text:
+
+Dann gab es noch ein Hackcenter, das aus einem großes Tisch bestand, an dem man mit seinem Laptop sitzen und an seinen eigenen Projekten arbeiten oder Spaß im Internet haben konnte. Außerdem konnte man kleinere Roboter zusammenbasteln, die aus einem Vibrationsmotor und einer Zahnbürste bestanden.
+Natürlich haben wir auch unser see-base Bällebad aufgebaut, welches ja von der Toolbox beherbergt wird, da wir bei uns nicht genug Platz in unserem Space haben. Zu guter Letzt gab es noch eine Werkstatt, in der es alles mögliche gab um Holz zu bearbeiten. 
+
+<div class="box alt special">
+    <div class="row no-collapse 50% uniform">
+        <div class="4u">
+            <a href="./toolboxdrucker.jpg" class="image fit zoom-in"><img src="./toolboxdrucker.jpg" alt="" /></a>
+        </div>
+        <div class="4u">
+            <a href="./toolboxdampfmaschiene.jpg" class="image fit zoom-in"><img src="./toolboxdampfmaschiene.jpg" alt="" /></a>
+        </div>
+        <div class="4u">
+            <a href="./toolboxbuildup.jpg" class="image fit zoom-in"><img src="./toolboxbuildup.jpg" alt="" /></a>
+        </div>
+</div>
+</div>
+
+<div class="box alt special">
+            <div class="row no-collapse 50% uniform">
+            <div class="4u">
+                <a href="./toolboxstand.jpg" class="image fit zoom-in"><img src="./toolboxstand.jpg" alt="" /></a>
+           </div>
+            <div class="4u">
+                <a href="./drucker.jpg" class="image fit zoom-in"><img src="./drucker.jpg" alt="" /></a>
+            </div>
+            <div class="4u">
+                <a href="./toolboxgaming.jpg" class="image fit zoom-in"><img src="./toolboxgaming.jpg" alt="" /></a>
+            </div>
+</div>
+</div>
+
+Und falls man genug Gedruckt, gespielt und im Bällebad geplantscht hatte, konnte man einfach zum nächsten Stand gehen, und sich beim C3WOC eine Waffel holen.
+#### body_image ####
+image: c3woccover.jpg
+----
+zoom: true
+----
+float: 
+----
+width: 
+#### body_image ####
+image: c3woc.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 33
+#### body_text ####
+text:
+
+####Das C3WOC
+Das C3WOC ist das Waffel Operation Center. Es sorgt dafür, dass auf Chaosnahen Veranstaltungen niemand verhungert und es genug Waffeln für alle gibt. Für die Waffelversorgung ist ein Bartscher Gastro-Waffeleisen zuständig mit einer Stromzufuhr von 2,2kW und Temperaturen zwischen 0 und 300°C. Das C3WOC behauptet an strategisch wichtigen Orten Waffeln deponiert zu haben und sie drohen damit, diese zu benutzen. Wer also in Berührung mit den C3WOC Massenvernichtungswaffeln kommen möchte, muss nur auf <a href="https://c3woc.de" target="_blank">c3woc.de</a> nachschauen auf welchen Veranstaltungen das C3WOC als nächstes zuschlagen wird.
+#### body_image ####
+image: fillygons.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 33
+#### body_text ####
+text:
+
+Nachdem man nun also einen vollen Bauch hatte, konnte man weiter gehen zu den Fillygons und die Filly-Wesen, die in einer Mathematisch perfekten Welt leben und sich gern zu geometrischen Formen zusammenschließen. Es gibt Drei, Vier, Fünf.... ecke die man miteinander verbinden kann, sodass dann Gebilde daraus entstehen, meistens Sterne – theoretisch ist aber fast alles möglich. Herstellen kann man die Fillygons mit einem 3D Drucker, die Dateien dazu kann man sich entweder im <a href="https://github.com/Fillygons/fillygons">Git-Repository</a> dazu herunterladen oder man generiert sie einfach selbst, auch diese Dateien sind im gleichen Repository zu finden.
+Wenn man nun weiter nach Links ging, kam man zum Freifunk Bodensee Stand und man konnte einiges über das dezentrale, offene Netz erfahren.
+
+####Freifunk Bodensee
+#### body_image ####
+image: ffbsee.jpg
+----
+zoom: true
+----
+float: 
+----
+width: 
+#### body_text ####
+text:
+
+Am Stand von <a href="https://ffbsee.de" target="_blank">Freifunk Bodensee</a> konnte man vor allem Informationen sammeln. Egal ob man Wissen wollte, was dieses Freifunk eigentlich ist oder ob man irgendwelche Details, z.B. über geeignete Hardware oder die Firmware wissen wollte, die Freifunker konnten einem jede Frage beantworten. 
+Der Stand war in einem Rechteck aufgebaut. Hinten war ein großes Banner und auf den Tischen lagen Flyer von der Bodensee Community, aber auch von vielen weiteren Communities aus anderen Regionen, damit auch Messebesucher, die nicht vom Bodensee kamen, eine Kontaktadresse bekommen konnten. Aufgebaut war auch ein großer Bildschirm auf dem aktuelle Informationen über Freifunk Bodensee, wie die Netzgröße, die Zahl der verbundenen Clients oder ein allgemeines Informationsvideo über Freifunk zu sehen war. Außerdem lagen noch einige Router auf den Tischen, die man für eine Spende erwerben konnte, um einen eigenen Freifunk-Knoten aufzustellen – Hinweise zum Flashen der Firmware wurden gleich mitgegeben. Was besonders war, war dass die Freifunker ein ziemlich stabiles Freifunknetz extra für die Messe aufgebaut hatten, welches in den letzten Jahren nicht vorhanden war. Mehrere Access Points waren über die Halle verteilt und es wurde eine eigene Glasfaserleitung verlegt, um möglichst optimale Performance zu erreichen. 
+
+Auf der anderen Seite dieser Stände waren einige Tische aufgebaut, an denen die Teams der Maker Challange an ihren Projekten arbeiten konnten.
+#### body_image ####
+image: maker_challenge_krol.jpeg
+----
+zoom: true
+----
+float: right
+----
+width: 33
+#### body_image ####
+image: makerchallangepreisverleihung.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 33
+#### body_text ####
+text:
+
+####Die Maker Challange
+Die diesjährige Aufgabe der Maker Challange bestand darin, eine Apparatur zu bauen, die ein Bild malen sollte. Ein paar Kleinigkeiten durften Zuhause vorarbeitet werden, doch der Großteil des Bastelns sollte auf der Messe geschehen. Für diese Aufgabe hatten die Teams den ganzen Samstag und den Sonntag bis 12 Uhr Zeit. Auch wir nahmen an dieser Challange teil. Da unsere Zeit knapp war und wir nicht allzu viel vorbereitet hatten, entschlossen wir uns etwas zu bauen, was nicht sehr funktionell dafür aber sehr effektreich war. Es sollte eine große Show um wenig geben.  
+Wir bauten schlussendlich ein menschenhohes Holzgerüst auf vier Beinen, unten führten wir zwei Gummiseile durch Rollen und Schrittmotoren, so dass diese bewegt werden konnten. Oben war eine Flasche, aus der die Farbe durch einen Schlauch nach unten geführt wurde. Am unterern Ende konnte ein Servomotor den Schlauch öffnen und schließen, damit die Farbe mehr oder weniger kontrolliert aus dem Schlauch laufen konnte. Das Schlauchende wurde von diesen Gummiseilen bewegt, so war es möglich grobe Formen zu malen, auch wenn das ganze alles andere als präzise war. Zusätzlich wurden dann überall WS2811er LEDs am Holz befestigt und durch einen zweiten Schlauch, der neben dem Farbschlauch geführt wurde, wurde der Nebel einer Nebelmaschine gepustet.
+Mit unserer Show, die mit viel geblinke und einer kreativen Moderation über die Bühne ging, überzeugte unser "Art-o-Bot 9001" so sehr, dass wir damit einen der drei Hauptpreise gewannen: den Preis für den "Kreativ/Originellsten" Apparat und damit verbunden ein Preisgeld von 200€. Die anderen Teams bauten Sachen wie eine Nerfgun, die Automatisch auf eine Zielscheibe schoss, eine "Hand" für einen Industrieroboter, damit dieser das Bild malen konnte, eine Art 3D Drucker, nur für 2D Sachen (also einen Drucker) oder auch ein kleines Auto, was mit einem Klebstift im Kreis fuhr und anschließend einen mit Konfetti gefüllten Luftballon über sich zum Platzen brachte und so ein geklebtes Konfettibild erzeugte.
+#### body_text ####
+text:
+
+<div class="box alt special">
+            <div class="row no-collapse 50% uniform">
+            <div class="4u">
+                <a href="./makerchallange4.jpg" class="image fit zoom-in"><img src="./makerchallange4.jpg" alt="" /></a>
+           </div>
+            <div class="4u">
+                <a href="./makerchallange2.jpg" class="image fit zoom-in"><img src="./makerchallange2.jpg" alt="" /></a>
+            </div>
+            <div class="4u">
+                <a href="./makerchallange3.jpg" class="image fit zoom-in"><img src="./makerchallange3.jpg" alt="" /></a>
+            </div>
+</div>
+</div>
+<div class="box alt special">
+            <div class="row no-collapse 50% uniform">
+            <div class="4u">
+                <a href="./makerchallange5.jpg" class="image fit zoom-in"><img src="./makerchallange5.jpg" alt="" /></a>
+           </div>
+            <div class="4u">
+                <a href="./makerchallange6.jpg" class="image fit zoom-in"><img src="./makerchallange6.jpg" alt="" /></a>
+            </div>
+            <div class="4u">
+                <a href="./makerchallange7.jpg" class="image fit zoom-in"><img src="./makerchallange7.jpg" alt="" /></a>
+            </div>
+</div>
+</div>
+#### body_image ####
+image: makerchallangepreisverleihung2.jpg
+----
+zoom: true
+----
+float: 
+----
+width: 
+#### body_text ####
+text:
+
+####Der Maker Slam
+Was für uns see-baseler aber die Krönung war, war dass wir auf dem Maker Slam gewannen! Der Maker Slam ist eine Art Poetry-Slam auf dem man, statt Texte vorzutragen, eines seiner Projekte vorstellt und das Publikum und eine Jury von sich zu überzeugen versucht. Der Slam fand am Samstag und Sonntag statt. Eines der see-base Mitglieder gewann am Samstag mit der Vorstellung seines "Shitty Robot Arm" ein Arduino Starterkit und bekam dadurch die Chance am nächsten Tag nochmal teilzunehmen. Als Hauptpreis für die beiden Tage gab es einen 3D Drucker zu gewinnen und zu unserer großen Überraschung schaffte er es auch in der zweiten Runde mit seinem Projekt die Leute zu begeistern und gewann somit auch den Hauptpreis!  
+Die große Überraschung kam zum Schluss, als der Drucker überreicht wurde: es war nicht irgendein 3D Drucker, sondern ein Prusa I3 MK3, eines der zur Zeit begehrtesten 3D Drucker der erst seit einem halben Jahr auf dem Markt ist.
+
+Wie jedes Jahr war auch diese Messe etwas anstrengend, weil es wie immer viel zu tun gab, aber es hat natürlich auch großen Spaß gemacht die Stände zu betreiben, an dem Malroboter zu schrauben die anderen Maker und Hacker mal wieder zu treffen und uns von ihren Projekten inspirieren zu lassen. Und natürlich sind wir sehr sehr glücklich darüber jetzt einen Prusa I3 MK3 in unserem Space stehen zu haben :)
+
+***
+Vielen dank an Jonas Otto und omnibrain / Andreas Pfau für die Photos!
+***
+---
+pub_date: 2018-6-10 2:30
+---
+summary: Wir waren auf der Maker Faire Bodensee 2018 und haben dort nicht nur unseren Messestand versorgt, sondern auch wieder ein paar Preise abgestaubt.

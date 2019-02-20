@@ -1,0 +1,84 @@
+title: Getränkeautomat
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+###Makerchallange 2017 – Der Drinkautomat
+
+In Friedrichshafen auf dem Messegelände fand vom 15.7.2017 bis zum 16.7.2017 die Maker Faire Bodensee statt. Der ein oder andere Hackerspace hatte  dort einen stand wie z.B. die Toolbox Bodensee. Diese veranstaltete, wie im Vorjahr auch, die so genannte Maker-Challange. Bei dieser Challange war die Aufgabe, irgend eine Art von Apertur zu Bauen, die ein Getränk zusammen mixen sollte. Es durfte keine Zutat von Hand hinzugefügt werden.  
+
+Da wir im Vorjahr auch bei dieser Challange teilgenommen hatten, damals haben wir mit einer Rohrpost Konstruktion einen Lichtschalter angeschaltet und viele Preise abgestaubt, war für uns klar dass wir es 2017 nochmal probieren.
+Die Idee war, mit mehreren Schrittmotoren, Gartenwasserhähne auf und zu zu drehen die an Behältern angeschlossen waren in welchem sich verschiedene Zutaten befanden. Die Schwerkraft würde genügend druck erzeugen damit die Flüssigkeit aus den Hähnen kommen konnte. Über irgend eine Steuerung sollte man auch noch einstellen können, welche Dosierung das Getränk haben sollte.  
+#### body_image ####
+image: elektronik.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 50
+#### body_text ####
+text:
+
+Wir fingen also an und bestellte die Motoren, die Treiber und einen Arduino dazu und begann den Code zu schreiben und zu testen. Unsere größte sorge war, dass die Schrittmotoren nicht genügend Kraft besäßen um die Hähne zu bewegen. Wir bestellten 3 Normale Schrittmotoren und zwei <a href="http://www.schmalzhaus.com/EasyDriver/" target="_blank">Easy Driver</a> Treiber, doch leider brannte uns einer der Treiber beim Ausprobieren durch, deshalb konnte unser Automat am ende nur 2 Zutaten Mischen.  
+Als Verbindung zwischen Gartenwasserhahn und Motor verwendeten wir erstmals einen kleinen Holzklotz, später jedoch modellierten wir diesen Klotz und druckten ihn mit dem 3D Drucker aus, dadurch wurde das Endprodukt etwas schicker.
+#### body_image ####
+image: rohbau.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 50
+#### body_text ####
+text:
+
+Das Gehäuse war nach kurzer Planung auch relativ schnell gebaut. Hier verwendeten wir nicht viel mehr als ein paar Bretter und Schrauben.  
+
+Um das ganze fertig zu machen, mussten wir nur noch die Elektronik und das Gehäuse zusammen bringen und die Motoren richtig Programmieren, wir waren also gut auf die Messe vorbereitet.  
+
+####Auf der Messe
+Am ersten Messetag, an dem die Teams der Makerchallange von 9 bis 18 Uhr zeit hatten ihre Objekte fertig zu bauen, hatten wir viel zeit unseren Automaten fertig zu bauen und die anderen Teams zu begutachten.  
+Die Motoren befestigten wir genau über den Wasserhähnen, die Kraft der Motoren reichte gerade so aus um die Hähne zu bewegen. Die Elektronik schraubten wir an die Rückseite des Gehäuses, so dass sie noch sichtbar war. Der fertige Automat sah so aus:
+#### body_image ####
+image: automatfront.jpg
+----
+zoom: true
+----
+float: 
+----
+width: 
+#### body_image ####
+image: automatback.jpg
+----
+zoom: true
+----
+float: 
+----
+width: 
+#### body_text ####
+text: Just for fun haben wir noch einen Schaltplan zu diesem Projekt gemalt:
+#### body_image ####
+image: schaltplan.svg
+----
+zoom: true
+----
+float: 
+----
+width: 50
+#### body_text ####
+text:
+
+Am Sonntag, dem zweiten Messetag waren die Präsentationen der Projekte und anschließend die Preisübergabe.  
+Gewonnen haben wir den Besucherpreis, da einige Teams aus Weingarten Zugang zu teuren Lebensmitteltauglichen Elektro-Pumpen hatten durch die sie ganz andere Möglichkeiten hatten und natürlich deutlich aufwändigere Automaten bauen konnten. Wir waren natürlich trotzdem mit unserem Preis sehr zufrieden.
+
+Hier ist noch der Projektcode zum Herunterladen:  
+<a href="./automat.ino" download>Code zum Projekt </a>
+---
+summary: Makerchallange 2017 – Der Drinkatomat
+---
+preview_picture: automatfront.jpg
+---
+sort: 2

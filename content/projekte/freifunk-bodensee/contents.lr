@@ -1,0 +1,26 @@
+title: Freifunk Bodensee
+---
+preview_picture: freifunk-bodensee.png
+---
+summary: Freifunk ist ein dezentrales, freies Funknetz mit Anschluss ans Internet. Das haben auch Nerds aus der see-base festgestellt und haben die Initiative Freifunk Bodensee gegründet. Nun gibt es ein Freifunknetz am Bodensee mit über 300 Knoten und deutlich mehr Clients.
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+###Was ist Freifunk
+
+Freifunk ist eine dezentrales, unabhängiges Bürgernetz mit Zugang zum Internet. Freifunk bedeutet offene, uneingeschränkte und freie digitale Kommunikation. Jeder kann sich kostenlos über WLAN verbinden, ohne Passwort, ohne Registrierung. Jeder darf Freifunk nutzen, mitmachen und Freifunk erweitern. Freifunk ist eine nicht-kommerzielle Initiative für freie Funknetzwerke.
+
+###Freifunk ist eine Geste der Gastfreundschaft!
+
+Freie Netze werden von immer mehr Menschen in Eigenregie aufgebaut und gewartet. Konkret hat sich Freifunk zum Ziel gesetzt, offene Funknetzwerke einzurichten und diese miteinander zu verbinden. Dies ermöglicht einen freien Datenverkehr “durch die Luft” oder manchmal sogar über Kupfer oder Glas in der ganzen Stadt innerhalb des Freifunk-Netzes. Freifunk ist somit eine offene nicht-kommerzielle, hierarchielose Initiative für freie Funknetzwerke.
+
+Viele Freifunker stellen außerdem Ihren Internetzugang zur Verfügung und ermöglichen so anderen den Zugang zum weltweiten Netz. Freifunk-Netze sind „Selbstmach-Netze“. Für den Aufbau nutzen wir die Freifunk-Firmware auf unseren WLAN-Routern, eine spezielle Linuxdistribution.
+
+Einige der Hacker aus der see-base sind Gründungsmitglieder von Freifunk Bodensee und auch die Netzbetreiber die die Firmware, Gateways und die andere Infrastruktur am leben halten. So kann es auch mal sein, dass man in der see-base Leute findet, die plötzlich an Firmware compilieren oder am Freifunk Netz basteln.
+
+Weitere Informationen zu Freifunk sowie die Mailingliste, den IRC Chat oder die Social-Media Kontakte und die Informationen zum nächsten Treffen gibt es auf <a href="https://freifunk-bodensee.net/start.html">freifunk-bodensee.net</a>.
+---
+sort: 5

@@ -1,0 +1,248 @@
+_model: knowledgebase-post
+---
+title: Arch from Scratch
+---
+body: 
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+
+## Installataion von Arch Linux mit crypto und lvm
+
+
+Hier findet ihr eine deutschsprachige Anleitung, wie ihr Arch Linux von Grund auf installieren könnt. Mit verschlüsselter Festplatte und lvm. Diese Anleitung hat die wichtigsten Befehle aus anderen Anleitung zusammen extrahiert um die möglichkeit zu schaffen Arch Linux zu installiern. Und zwar mit Verschlüsselter Festplatte in einem LVM. Diese Anleitung soll als Hilfe dienen wenn man sein System neu aufsetzen möchte oder bestimmte Teile nicht mehr funktionieren. Zum Beispiel wenn man sein Bootloader versehendlich zerstört hat und diesen Neu einrichten will. Es empfielt sich dieser Anleitung zu folgen, während man am Kabelgebundenen Internet hängt. Für WLAN hilft einem sonst auch der Befehl ``wifi-menu`` weiter...
+Was diese Anleitung nicht enthält ist der Teil der GUI. Aber wenn man erstmal bis dahinn gekommen ist, ist dies meistens nicht mehr so schwer. Und wo man da weiter Recherchieren muss ist selbstverständlich verlinkt! Gerne helfen wir euch hierbei aber auch bei uns im Hackerspace weiter. Hier auf see-base.de findest du Informationen, wann wir uns treffen und wie du uns erreichen kannst.
+
+Beginnen wir also mal damit, das richtige Image auf einen USB Stick zu "kopieren".
+
+<h3>Arch ISO auf USB</h3>
+
+Kopiere das neuste Arch image von <a href="https://www.archlinux.de/">archlinux.de</a> mit dd auf deinen USB Stick. Natürlich muss hier nicht /dev/usbstick angegeben werden sondern der Pfad zu deinem USBStick. Diesen bekommt man beispielsweise mit dem Programm ''lsblk'' raus. Er kann zB. ''/dev/sdb'' heißen.
+
+````
+sudo dd if=/pfad/zum/arch.iso bs=4M status=progres of=/dev/usbstick
+````
+Anschließend auf den USB Stick booten.
+
+ <h3>Deutsch Tastaturbelegung</h3>
+
+````
+loadkeys de-latin1
+````
+*Im Englischen Tatstaturlayout sind y und z vertauscht.*
+
+<h3>SSH Server Starten</h3>
+
+Starte den SSH Daemon um dich von einem anderen Rechner (von dem man copy und paste bedienen kann) auf der Maschine zur Neuinstallation anzumelden. 
+````
+systemctl start sshd.service
+````
+Gebe dem root noch mit ``passwd`` ein Passwort.
+
+Falls der Laptop keine IP hat, die Verkabelung aber passt kann man mit ``dhcpcd`` eine IP per DHCP holen. <a href="https://wiki.archlinux.org/index.php/Install_from_SSH">Quelle SSHD</a>
+
+ <h3>Partitionierung</h3>
+
+Was für Festplatten stehen dir zur Verfügung? Diese kannst du mit dem folgenden Befehl anzeigen:
+``lsblk``
+Partitioniere die Festplatte, die du verwenden möchtest. zB. ``/dev/sda``
+Am besten mit:
+````
+cfdisk /dev/sda
+````
+
+Du benötigst eine Boot-Partition mit ca. 512MB mit dem Typ: ``EFI System``.
+Und den restlichen Speicherplatz der Festplatte(n) für das LVM mit dem ``Linux filesystem``.
+
+
+Und natürlich die Festplatten noch ordentlich Formatieren mit dem ``shred`` Befehl z.B.:
+
+````
+shred -v -n 3 /dev/sda2
+````
+
+ Verschlüsseltes LVM einrichten
+==========
+
+Jetzt werden die benötigte Kernel-Modul für die Verschlüsselung geladen:
+
+````
+modprobe dm-crypt
+````
+
+Anschließend wird sda2 verschlüsselt. Welche Verschlüsselungsverfahren uns zur Verfügung stehen sehen wir mit folgenden Befehl:
+
+````
+cryptsetup benchmark
+````
+
+Mit der Methode aes-xts-plain und einem 512 großen Key geht das so:
+
+````
+cryptsetup -c aes-xts-plain -y -s 512 luksFormat /dev/sda2
+````
+
+Nun wird die verschlüsselte Partition geöffnet und das LVM eingerichtet:
+
+````bash
+  cryptsetup luksOpen /dev/sda2 lvm
+
+  pvcreate /dev/mapper/lvm
+  vgcreate main /dev/mapper/lvm
+  lvcreate -L 8GB -n swap main
+  lvcreate -l 100%FREE -n root main
+````
+
+ <h3>Dateisystem:</h3>
+
+
+Mit mkfs wird nun das Dateisystem auf die Partitionen geschrieben:
+````
+mkfs.ext4 -L root -/dev/mapper/main-root
+mkswap -L swap /dev/mapper/main-swap
+mkfs.vfat -F32 /dev/sda1
+````
+
+<h3>System mounten:</h3>
+
+````
+mount /dev/mapper/main-root /mnt
+mkdir /mnt/boot
+mount /dev/sda1 /mnt/boot
+````
+
+<a href="https://wiki.archlinux.de/title/Systemverschl%C3%BCsselung_mit_dm-crypt">Quelle LVM Einrichten</a>
+
+Basissystem installieren:
+
+````
+pacstrap /mnt base base-devel vim dialog wpa_supplicant networkmanager tmux
+# SWAP altivieren:
+swapon -L swap
+genfstab -U -p /mnt >> /mnt/etc/fstab
+echo -e "Bitte die fstab kontrollieren:\n"
+cat /mnt/etc/fstab
+````
+
+Nun wechsel in das System mit:
+
+``arch-chroot /mnt``
+
+<h3>Sprache</h3>
+
+``echo -e 'LANG="de_DE.UTF-8"\nLC_COLLATE="C"\nLC_TIME="de_DE.UTF-8"' > /etc/locale.conf``
+
+Die Zeitzone Einstellen:
+
+````
+ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+````
+
+/etc/mkinitcpio.conf wird angepasst:
+
+````
+vim /etc/mkinitcpio.conf
+````
+`
+Die MODULES- und HOOKS-Werte werden entsprechend angepasst:
+````
+MODULES=(ext4)
+HOOKS= (base udev autodetect modconf block keyboard keymap encrypt lvm2 filesystems fsck shutdown)
+````
+
+Hostename und Keybord anpassen:
+
+````
+echo myhostname >> /etc/hostname
+echo KEYMAP=de-latin1 >> /etc/vconsole.conf
+````
+Die Einträge mit ``de_DE*`` in der ``/etc/locale.gen`` einkommentieren und dann mit ``locale-gen`` aktivieren.
+
+ Kernel-Image erstellen:
+--------
+``mkinitcpio -p linux``
+``systemctl enable dhcpcd.service``
+
+
+
+<h3> Systemd-Boot</h3>
+
+````
+bootctl install
+````
+
+Den bootloader-Eintrag erstellen. Z.B.:
+````
+echo -e "title Arch Linux Encrypted\
+\nlinux /vmlinuz-linux\ninitrd /initramfs-linux.img\
+\noptions cryptdevice=UUID=\
+$(ls -la /dev/disk/by-uuid | grep sda2 | cut -d" " -f10)\
+:lvm root=/dev/mapper/main-root quiet rw"> /boot/loader/entries/arch-encrypted-lvm.conf
+````
+
+<a href="https://wiki.archlinux.org/index.php/Systemd-boot">Quelle systemd-boot</a>
+
+
+ reboot
+======
+System verlassen, umount und reboot:
+````
+exit
+umount /mnt/{boot,}
+reboot
+````
+<h3>Neues System einrichten</h3>
+
+
+Nun sollte das System mit UEFI Booten und das Passwort für /dev/sda2 automagisch verlangen. 
+Dort geht es dann erstmal darum das System einzurichten...
+
+````
+# Packete aktualisieren
+pacman -Suy
+# Passwort vergeben für root
+passwd
+# Example for adding User:
+# useradd -m -G wheel -s /bin/bash archie
+# Bash einrichten:
+echo -e "if [ \"\$(id -u)\" == \"0\" ]; then\n\
+  PS1='\[\033[01;31m\]\u\[\033[01;36m\]@\[\033[01;32m\]\H\[\033[01;34m\] <\A> \
+\[\033[01;35m\] \j \[\033[01;36m\] \w \[\033[01;33m\]\\n\$\[\033[01;00m\] '\n\
+else\n    PS1='\[\033[01;32m\]\u\[\033[01;36m\]@\[\033[01;32m\]\H\[\033[01;34m\] <\A> \
+\[\033[01;35m\] \j \[\033[01;36m\] \w \[\033[01;33m\]\\n\$\[\033[01;00m\] '\nfi" >> /etc/bash.bashrc
+echo -e "set expandtab\nset tabstop=4\
+ \nset shiftwidth=4\nset fileencoding=utf-8\
+ \nset encoding=utf-8\ncolorscheme elflord\
+ \nsyntax on" > ~/.vimrc
+ cp ~/.vimrc /etc/skel/.vimrc
+````
+
+<h3>Arch User Repository</h3>
+Das ArchLinux User-Community Repository  ist eine Sammlung von Paketbau-Anleitungen (den PKGBUILDs) anhand derer Programmpakete für Arch Linux mittels ABS erstellt werden können. Jeder kann dort seine Pakete nach einer Registrierung veröffentlichen und anderen zur Verfügung stellen. 
+
+Diese Kann man über helfer installieren. Eine liste der aktiv entwickelten AUR Helfer gibt es auf <a href="https://wiki.archlinux.org/index.php/AUR_helpers">wiki.archlinux.org</a>
+
+
+ <h3>Arch User</h3>
+
+
+Nun geht es weiter dem der Desktop-Oberfläche seiner wahl...
+
+Zum Beispiel <a href="https://wiki.archlinux.org/index.php/KDE">KDE</a> oder [I3](https://wiki.archlinux.org/index.php/I3)
+
+Natürlich braucht man dafür <a href="https://wiki.archlinux.org/index.php/Xorg">Xorg</a>...
+
+Hier gibt es noch ganz andere Religinen und Meinungen, was denn nun die richtige Desktop-Oberfläche ist. Und um da jedem die eigenen Erfahrungen und Entscheidungen machen lassen zu können ist hier nun keine so ausführlichere Anleitung mehr. Sorry.
+
+Grob gesagt geht es weiter damit, dass man die Arch Wiki Seite seiner lieblings Desktop-Oberfläche aufruft.. Dort steht in der Regel wie man das Installiert. Normalerweise wird dabei immer ein X-System benötigt und die Oberfläche (zB. KDE) selber... 
+
+Probiere es doch mal aus und berichte von deinen Erfahrungen!
+---
+description: Arch mit LVM und verschlüsselter Festplatte.
+---
+text: 
+---
+category: Anleitung

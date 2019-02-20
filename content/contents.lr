@@ -1,0 +1,189 @@
+title: see-base
+---
+slogan: Ein Hackerspace am Bodensee
+---
+about-header: Ein-Satz-Beschreibung der see-base
+---
+about_header: Hier können Hacker und Häcksen hacken und häckseln!
+---
+about_text:
+
+Wir sind eine Gruppe Technologie-Enthusiasten aus dem Raum Überlingen am Bodensee.  
+Die see-base ist ein Ort, an dem Gleichgesinnte sich beim Löten, Programmieren, Basteln, dem Reparieren und Modifizieren von Geräten und Maschinen austoben können – oder kurz gesagt:  
+**„Hier können Hacker und Häcksen hacken und häckseln.“**
+
+Neben den technischen Aspekten setzen wir uns für Freiheit und Selbstbestimmung, sowohl im Cyberspace, als auch in der Realität ein. Daraus entstand unter Anderem eine Initiative, Freifunk zum Bodensee zu bringen, ein Zusammenschluss aus mehreren Hackerspaces um den Bodensee herum, zudem wurden viele Vorträge gehalten und Veranstaltungen organisiert.
+---
+box1_text: HACK!
+---
+box1_title: Hacken
+---
+box2_text: *häcksel*
+---
+box2_title: Häckseln
+---
+box3_text: HÄCKSEL!
+---
+box3_title: Häckseln
+---
+box4_text: *hack*
+---
+box4_title: Hacken
+---
+promobox1_text: Freie Funken für alle!
+---
+promobox1_title: Freifunk Bodensee
+---
+promobox2_text: Chaos über den Bodensee!!!11elf
+---
+promobox2_title: Chaos Bodensee
+---
+promobox1_url: https://ffbsee.de/
+---
+promobox2_url: https://bodensee.space/
+---
+banner: aincrad.png
+---
+big_picture: 
+---
+promobox1_picture: ff-logo.png
+---
+promobox2_picture: bodensee-space.png
+---
+box_header: Was wir so machen
+---
+_model: home
+---
+box1_icon: fa-steam
+---
+box2_icon: fa-github
+---
+box3_icon: fa-linux
+---
+box4_icon: fa-wifi
+---
+block:
+
+#### promobox ####
+title: TEST
+----
+picture: bodensee-space.png
+----
+text: Foo Bar
+---
+promobox:
+
+#### promobox ####
+title: Freifunk Bodensee
+----
+picture: ff-logo.png
+----
+text: [Infotext für Freifunk]
+----
+url: https://ffbsee.de/
+#### promobox ####
+title: Chaos Bodensee
+----
+picture: bodensee-space.png
+----
+text: [Infotext für Chaos Bodensee]
+----
+url: 
+---
+promobox1:
+
+#### promobox ####
+title: Freifunk Bodensee
+----
+picture: ff-logo.png
+----
+text:
+
+Freifunk ist ein dezentrales, unabhängiges Bürgernetz mit Zugang zum Internet. Freifunk bedeutet offene, uneingeschränkte und freie digitale Kommunikation. Jeder kann sich kostenlos über WLAN verbinden, ohne Passwort, ohne Registrierung. Jeder darf Freifunk nutzen, mitmachen und erweitern. Freifunk ist eine Geste der Gastfreundschaft. 
+----
+url: https://ffbsee.de
+---
+promobox2:
+
+#### promobox ####
+title: Chaos Bodensee
+----
+picture: bodensee-space.png
+----
+text: Bei Chaos Bodensee geht es darum, die Hacker, Maker und andere Spaces aus der Bodensee Region untereinander besser zu verknüpfen, sich gegenseitig kennen zu lernen und gemeinsame Projekte zu starten.
+----
+url: https://bodensee.space
+---
+featurebox:
+
+#### featurebox ####
+title: Hacken
+----
+icon: fa-keyboard-o
+----
+accent: accent4
+----
+text: Wir verstehen uns als Hacker nach den Prinzipien des Chaos Computer Clubs und handeln dem entsprechend nach der <a href="http://ccc.de/de/hackerethics" target="_blank">Hackerethik</a>.
+#### featurebox ####
+title: Programmieren
+----
+icon: fa-code
+----
+accent: accent5
+----
+text: Wir entwickeln verschiedene Software, wie z.B. Steuerungssoftware für unsere Hardwareprojekte, Übungsprojekte oder Internetdienste. Dabei Schreiben wir vor allem in Python, aber auch in anderen Sprachen wie C++, Bash und Lua.
+#### featurebox ####
+title: Menschen Treffen
+----
+icon: fa-group
+----
+accent: accent2
+----
+text: Wir bieten eine Plattform auf der sich gleichgesinnte Lebensformen, z.B. aus dem Chaos Umfeld, treffen und austauschen können.
+#### featurebox ####
+title: Basteln
+----
+icon: fa-cogs
+----
+accent: accent3
+----
+text: Wir arbeiten an verschiedenen Hardwareprojekten, welche von mechanischen Spielereien, über selbstgelötete Elektronik, bis hin zu komplexeren Steuerungen gehen. Dabei kommen immer wieder Mikrocontroller (Arduino) oder Kleinstrechner (Raspberry Pi) zum Einsatz.
+#### featurebox ####
+title: Workshops
+----
+icon: fa-puzzle-piece
+----
+accent: accent4
+----
+text:
+
+Wir bieten Workshops an, um den Menschen ein Technikverständnis zu vermitteln, damit Sie die Technik kontrollieren und nicht anders herum. 
+#### featurebox ####
+title: Waffeln
+----
+icon: fa-heart
+----
+accent: accent5
+----
+text: Eine der strategischen Standorte des <a href="https://c3woc.de/#tourdaten">C3 Waffel Operation Center</a> ist der Bodensee. So geben wir unterstützung bei der Waffelproduktion und helfen bei taktischen Waffeleinsätzen aus.
+#### featurebox ####
+title: Events
+----
+icon: fa-calendar-check-o
+----
+accent: accent5
+----
+text: Wir organisieren immer wieder Veranstaltungen oder nehmen an welchen Teil. Unter Anderem haben wir bei der Maker Faire in Friedrichshafen teilgenommen, hatten einen Stand beim Adventsbasar in der Waldorfschule Überlingen oder haben das Freifunk Camp mit organisiert.
+#### featurebox ####
+title: Wissensvermitlung
+----
+icon:
+
+fa-university 
+----
+accent: accent4
+----
+text:
+
+Wir versuchen nicht nur uns Wissen anzueignen, sondern auch dieses weiter zu geben!
+So gibt es zum Beispiel die <a href="/projekte/technikverstaendnis-schueler-ag/">Technikverständnis AG</a> mit dem Gedanken, interessierten Schülern der Waldorfschule Überlingen die Möglichkeit zu geben, sich mit den verschiedenen Aspekten der Informationstechnologie auseinanderzusetzen und sie verstehen zu lernen.

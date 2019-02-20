@@ -1,0 +1,24 @@
+_model: contact
+---
+title: Kontakt
+---
+body:
+
+Komm doch mal bei uns vorbei! Melde dich einfach im IRC oder per Mail, ruf an oder schau auf [bodensee.space](https://bodensee.space/) nach, ob der Space offen ist. Wir freuen uns auf dich!
+
+### Wo wir sind
+|                         |                                                                          |
+| ----------------------- | ------------------------------------------------------------------------ |
+| E-Mail:                 | [kommunikation ät see-base.de](mailto:kommunikation@see-base.de)         |
+| IRC:                    | [hackint.org/#see-base](irc://irc.hackint.org/#see-base) *( [Webchat](https://webirc.hackint.org/#irc://irc.hackint.org/#see-base) )* <br/> <a href="/knowledgebase/how2irc" style="color: red; text-layout: normal">Wie funktioniert IRC?</a>|
+| Twitter:                | [twitter.com/@see_base](https://twitter.com/@see_base)                   |
+| GitHub:                 | [github.com/see-base](https://github.com/see-base)                       |
+| GitLab:                 | [git.see-base.de](https://git.see-base.de)                               |
+| Hackerspace am Bodensee:| [bodensee.space](https://bodensee.space/doku.php?id=see-base)            |
+| Hackerspaces.org:       | [wiki.hackerspaces.org/see-base](https://wiki.hackerspaces.org/See-base) | 
+| OSM:                    | [openstreetmap.org](https://www.openstreetmap.org/node/4690517051)       |
+| Jabber Groupchat        | [proberaum@muc.jabber.see-base.de](xmpp:proberaum@muc.see-base.de)       | 
+| Telefon:  | <a href="tel:07551830124">+49 (0) 7551 830124</a>
+
+---
+show_form: no

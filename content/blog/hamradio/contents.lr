@@ -1,0 +1,39 @@
+title: Amateurfunk
+---
+author: L3D
+---
+summary:
+
+Amateurfunk ist ein spannendes Thema. Speziell für Nerds, Bastler und Hacker wie sie in Hackerspacen zu finden sind.  
+Nun hat sich auch die see-base diesem Thema genähert und auch schon eine Antenne für das 2m-Band aufgebaut...
+---
+pub_date: 2017-10-1 13:37
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+##Amateurfunk
+Funkamateure funken mit eigener Infrastruktur, unabhängig von Servern, Internetserviceprovidern und Rechenzentren um den ganzen Globus, über Satelliten oder auch bis zum Mond und über die Reflexion wieder zurück zur Erde. Und das nicht wie bei WLAN mit einer maximal zulässigen Sendeleistung von 0,1 Watt sondern legal mit je nach Frequenz mit bis zu 750 Watt. 
+
+### Wer darf Amateurfunk betreiben?
+
+Der Empfang von Amateurfunksendungen ist jedermann gestattet, ohne dass es einer besonderen Genehmigung bedarf. Empfänger für die Amateurfunkbänder sind im Internet erhältlich. Um auch selbst senden zu dürfen, benötigt man aber eine entsprechende Lizenz der Bundesnetzagentur. Diese Lizenz erhält man, wenn man erfolgreich eine Prüfung abgelegt hat und ein Rufzeichen zugeteilt wurde. 
+
+So eine Lizenz hat einer der Hacker der see-base gemacht und so das Thema Amateurfunk in den Hackerspace gebracht.
+
+Nun haben wir im Mackerspace <a href="https://toolbox-bodensee.de" target="_blank">Toolbox-Bodesee e.V.</a> eine Antenne für das 2-Meter Amateurfunkband <i>(144MHz bis 146MHz)</i> aufgebaut und sie in Betrieb genommen.
+
+Wer also Nerds der see-base mal anders erreichen will... Probiert es mal mit Amateurfunk.
+
+### Mal reinhören?
+
+Ein WebSDR aus der Region, genauer gesagt in Friedrichshafen, Fallenbrunnen gibt es hier: <a href="http://dk0te.dhbw-ravensburg.de:8901/" target="_blank">dk0te.dhbw-ravensburg.de</a>.
+Hier kann man einen Eindruck davon bekommen, auf welchen Frequenzbändern zu dieser Zeit etwas los ist. Und auch einfach mal reinhören um zu erleben, wie die Funkamateure eigendlich reden.
+
+### Selber Funkamateur werden
+
+Um selber ein Amateurfunker zu werden, muss man bei der Bundesnetzagentur eine Prüfung ablegen. Um für diese zu lernen gibt es einige Bücher wie den Amateurfunk-Lehrgang von Moltrecht.  Aber auch Software wie den [Hamradio Trainer](http://www.hamradiotrainer.de/).
+Für weitere Tipps und Tricks rund um den Bereich Amaterufunk können wir uns ja mal im IRC austauschen ;-)
+

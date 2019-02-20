@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% from "macros/preview-renderer.html" import render_knowledgebase_post %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<section id="main" class="container">
+    <header>
+        <h2>{{ this.title }}</h2>
+    </header>
+    <div class="box">
+        {% if this.body_blocks_1 %}
+            {% for blk in this.body_blocks_1.blocks %}
+            {{ blk }}
+            {% endfor %}
+        {% endif %}
+    
+        <hr />
+        
+        <h3>Einträge</h3>
+        
+        <table>
+        <thead>
+            <tr>
+                <th><strong>Titel:</strong></th>
+                <th><strong>Kurzbeschreibung:</strong></th>
+                <th><strong>Kategorie:</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for child in this.children %}
+                {{ render_knowledgebase_post(child) }}
+            {% endfor %}
+            {% for id, item in bag('knowledgebase-links').items() %}
+                {{ render_knowledgebase_post(item) }}
+            {% endfor %}
+        </tbody>
+        </table>
+        
+        <hr />
+        
+        {% if this.body_blocks_2 %}
+            {% for blk in this.body_blocks_2.blocks %}
+            {{ blk }}
+            {% endfor %}
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

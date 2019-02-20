@@ -1,0 +1,66 @@
+_model: knowledgebase-post
+---
+title: How to print 3D
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+Work in progress...
+###Dies ist eine Anleitung um in unserem Space 3D zu drucken.
+
+####3D Modell
+
+Um etwas zu Drucken braucht man ein Objekt, das man Drucken möchte. Ein 3D Modell. Solche Modelle kann man auf mehrere Arten erhalten.
+ * 3D Modell selber erstellen. Zum Beispiel mit dem Open Source Programm [Blender](https://www.blender.org/). Häufig werden auch CAD Programme wie OpenCAD verwendet.
+ * fertige 3D Modelle herunterladen. Zum Beispiel bei [Thingiverse](https://www.thingiverse.com/).
+ * Objekt als 3D Modell Einscannen. Damit haben wir noch keine Erfahrungen, aber es ist bestimmt [irgendwie](https://www.heise.de/ct/ausgabe/2012-11-Raeumlich-scannen-mit-Digitalkamera-Kinect-oder-Laser-Scanner-2346188.html) möglich.
+
+
+####Als GCODE Umwandeln
+
+Mit dem einfachen 3D Modell kann der Drucker nichts anfangen. Woher soll dieser auch wissen, wie groß das 3D Modell gedruckt wird. 3D Modelle haben gespeichert, wo die Ecken und Kanten eines 3D Modells in dem Dreidimensionalen Raum sind. Beim gcode wird gespeichert, von wo nach wo der Druckkopf in welcher Geschwindigkeit fahren soll und wie viel Filament dabei herausgelassen werden soll.
+
+####Individuelle Einstellungen pro Drucker
+
+Wir verwenden zum Umrechnen vom 3D Modell in ein Druckformat (üblicherweise .stl in .gcode) die Software cura. 
+Wir drucken nur mit PLA. Üblicherweise drucken wir mit einer Temperatur von 210-217°C und einer Flussgeschwindigkeit von 105-115%.
+Außerdem  ist es gut folgende Druckerspezifische Einstellungen vorzunehmen:
+
+#####Prusa i3
+
+Für den Prusa I3 sind die Standartinsellungen relativ gut. Je nach dem wie fein man drucken möchte wählt man eines der vorhandenen Profile aus. 
+
+
+
+####CTC Duplicator 4
+
+Die Stärken des Duplicator 4 sind, dass er sehr gut ??? Drucken kann. Seine Schwächen sind ???.
+
+````
+Ergänz mich bitte!
+````
+
+###Upload & Print
+
+Um den fertigen GCODE auf den Drucker hochzuladen, kannst du das über das Webinterface machen.
+Dieses erreichst du im see.base Netz unter [prusa.see-base.de](https://prusa.see-base.de/) und [duplicator.see-base.de](https://duplicator.see-base.de).
+
+Lade das Modell hoch und drücke auf Drucken.
+
+Checkliste für vor dem Drucken:
+
+ * Ist Filament im Drucker?
+ * Heizen die Druckerplatten?
+ * Ist das Bluetape so aufgetragen, dass man Drucken kann?
+ * laufen die Lüfter?
+
+
+Das wars. Happy printing!
+---
+description: Was muss man machen um mit unseren 3D Druckern zu Drucken?
+---
+category: Erklärung
+---
+_hidden: yes

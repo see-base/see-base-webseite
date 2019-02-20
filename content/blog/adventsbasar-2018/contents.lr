@@ -1,0 +1,123 @@
+title: Adventsbasar 2018
+---
+author: kr0l
+---
+body_blocks:
+
+#### body_text ####
+text: ##Zwischen Plätzchen, CyBÄR und heißen Lötkolben
+#### body_image ####
+image: lounge03.jpg
+----
+zoom: true
+----
+float: 
+----
+width: 
+#### body_text ####
+text:
+
+Jedes Jahr, am Samstag vor dem ersten Advent, findet in der Waldorfschule Überlingen ein Adventsbasar statt. Lehrer, Eltern und Schüler finden ihren Weg dorthin, und seit zwei jahren auch wir, die see-base.  
+Um nicht in der Fülle aus verschiedenen Ständen mit Bastelangeboten, Leckereien und verschiedenen Kunsthandwerken unter zu gehen, haben wir uns mal wieder unseren kleinen sicheren Chaos-Hafen in die Klassenräume gebaut.  
+Die Überlinger Waldorfschule ist sehr groß mit über 800 Schülern und so gibt es in dem verwinkelten Schulgebäude einiges an Platz, der bisher beim Basar unbenutzt blieb. So war es nicht schwierig uns dieses Jahr ein wenig mehr auszubreiten und zwei Klassenräume so wie den Flur vor diesen zu unserer Chaoswelt zu machen. Wir Brachten unser Bällebad her so wie das ein oder andere Sofa, stellten unsere Projekte vor und aus, Verkaufen Tee, Mate und sogar Waffeln dank des  <a href="https://c3woc.de" target="_blank">C3WOCs</a> und wir boten Lötworkshops und spielerische Einstiege in das Programmieren an. 
+#### body_image ####
+image: basar2018map.png
+----
+zoom: true
+----
+float: 
+----
+width: 
+#### body_text ####
+text: 
+#### body_image ####
+image: baellebad03.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 33
+#### body_image ####
+image: flur01.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 33
+#### body_image ####
+image: loeten02.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 33
+#### body_image ####
+image: loeten03.jpg
+----
+zoom: true
+----
+float: right
+----
+width: 33
+#### body_text ####
+text:
+
+Durch Erfahrungen aus dem Vorjahr trafen wir diesen Basar die Entscheidung, uns ein wenig zu fragmentieren und in drei Teile auf zu splitten. Das erste Fragment war die **Lounge**. In dieser gab es vor allem Infos über das, was wir als see-base machen. Hier wurden Projekte ausgestellt wie unser Schwebedraht, 3D Drucker wurden in Action gezeigt und einiges an Infomaterial und Postern an die Wände gehangen. Außerdem brachten wir drei Sofen und unser Bällebad um genügend Chill-Fläche bieten zu können und auch der Stickerexchange durfte natürlich nicht fehlen. Zusätzlich gab es eine Teke an der man Mate und Tee kaufen konnte.
+
+Ging man aus der Lounge hinaus, war zwischen zwei Säulen der **Waffelstand** vom C3WOC aufgebaut. Mit drei Waffeleisen wurden dort verzerfähige Waffeln ausgeteilt, die man sogar ohne vorlegen eines Waffelscheins abholen konnte. Aufgrund eines Handelsembargos wurden allerdings "nur" Glutenfreie, Vegane, Knoblauch und Deftige Waffeln verkauft.  
+
+Lief man nun noch ein paar Schritte weiter, kam man in einen Hell erleuchteten Raum, über dem auf einem großen Schild **Löten** stand. Auf einem Sideboard waren mehrere PCs auf denen das Spiel <a href="https://tomorrowcorporation.com/humanresourcemachine" target="_blank">Human Resource Machine</a> lief. In diesem Spiel lernt man spielerisch mit einfachen Befehlen, ähnlich einer Programmiersprache, umzugehen. Es müssen Dinge von Band A auf Band B gelegt werden und mit Befehlen wie "INBOX" und "OUTBOX" steuert man den Arbeiter, der dass übernimmt. Mit jedem Level werden die Aufgaben kniffliger und neue Befehle werden freigeschaltet. Man muss sich überlegen, wie man Zahlen Addieren, Subtrahieren und Multiplizieren kann. Zahlenketten müssen automatisiert erstellt werden können und man tastet sich immer weiter vor.  
+Auf einem Tisch in der Mitte vom Raum waren Lötkolben aufgebaut und dort hatte man die Möglichkeit, kleinere und größere Lötkits zu Bauen. Es gab nicht nur fertige Platinen, die nur noch zusammen gelötet werden mussten, wie kleine LED-Blink platienen und  TV-B-GONE Kits, sondern auch die <a href="https://github.com/Binary-Kitchen/SolderingTutorial/tree/master/NibblePegDIP" target="_blank">Nibble Peg - DIP</a> Kits die von der <a href="https://www.binary-kitchen.de/wiki/doku.php" target="_blank">Binary Kitchen</a> entwickelt wurden und auf dem letzten Congress relativ Prominent waren. Für diese Kits lötet man ein paar 2 pin RGB Blinky LEDs auf einer Wäscheklammer fest und verbindet diese mit einer 3.3V Knopfzelle. Heraus kommt ein bunt Blinkendes Spielzeug, dass gut zur Weihnachtszeit passt. 
+#### body_image ####
+image: loeten04.jpg
+----
+zoom: true
+----
+float: 
+----
+width: 
+#### body_text ####
+text:
+
+*(Foto: Mart)*
+
+Abgerundet wurde der Stand noch durch ausreichend LED Beleuchtung. Ein paar WS2811er LED Streifen wurden aufgehangen so wie der ein oder andere LED Strahler und ein paar Moving-Lights. Außerdem wurden viele Lampenschirme mit Farbfolien ausgestattet.  
+Das Gebäude der Waldorfschule hat ein Riesiges Foyer, von dem man in mehrere Gänge und in die Klassenräume kommt. Wir waren in der obersten Etage untergebracht und durch die LEDs prominent von allen Seiten zu sehen.  
+
+Beim Basar selber kamen die Leute in Strömen. Die Löt- und Wissensvermittlungsangebote wurden viel genutzt, der Waffelstand hatte ständig eine kleine Schlange und die Lounge war so gut wie immer am überlaufen.  
+Der Basar war für uns ein voller Erfolg. 
+
+
+<div class="box alt special">
+        <div class="row no-collapse 50% uniform">
+            <div class="6u">
+                <a href="./waffeledited.jpg" class="image fit zoom-in"><img src="./waffeledited.jpg" alt="" /></a>
+                <p>(Foto: L3D. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Lizenz</a>. *1)</p>
+           </div>
+            <div class="6u">
+                <a href="./waffeledited2.jpg" class="image fit zoom-in"><img src="./waffeledited2.jpg" alt="" /></a>
+                <p>(Foto: L3D. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Lizenz</a>. *1)</p>
+            </div>
+    </div>
+</div>
+
+####Chaoten auf einem Waldorfbasar... WTF?
+Das Hacker und Chaoten ausgerechnet an einem Basar einer Waldorfschule Teilnehmen, kann einem auf den ersten Blick komisch vorkommen, schließlich sind es in manchen fällen mehr als nur Klischees die eine Waldorfschule definieren. Allgemein gibt es wenig bis keine Hacker/Chaoten die kein Wissenschaftliches Weltbild haben, da passen "Konzepte" wie Antroprosofie, also ein Konstruckt, was sich versucht selbst als Wissenschaft zu Definieren, schwer dazu. Auch Homeopathie ist an Waldorfschulen weit verbreitet und mehr als nur Akzeptiert, was ebenfalls zu dem ein oder anderen Konflikt führen kann. Trotz dieser punkte ist es aber auf keinem Fall eine Lösung, vor Dinge wie der Waldorfbewegung die Augen zu zu machen.  
+Durch die Location unseres Vereinsheims und einem gewissen Anteil an Waldorfschülern und ehemaligen Waldorfschülern in der see-base ist eine gewisse nähe zur Überlinger Waldorfschule gegeben. Eine Chance wie der Basar, der auf der einen Seite der see-base Aufmerksamkeit schenkt und auf der anderen Seite die Entwicklung eines gewissen Technikverständnisses bei Schülern, Kindern und evtl sogar dem ein oder anderen Erwachsenen hervorruft, kann also nicht ungenutzt im Winde verwehen. 
+
+###Danke für die Tolle hilfe
+Den Basar hätten wir nicht ohne die Hilfe von ein paar wichtigen Freunden auf die Beine stellen können. Ganz besonderer dank geht an die Chaoten vom <a href="https://ccczh.ch/" target="_blank">CCCZH</a> die uns beim Aufbau, Abbau und während dem Basar tatkräftig zur Seite standen. Auch bei den Leute, die z.B. noch kurzfristig als Bällebad-Bademeister oder Waffelmaker eingesprungen sind, möchten wir uns bedanken.  
+Zum Schluss bleibt noch zu sagen, danke für den Tollen Basar und bis spätestens zum 35C3.
+
+
+*Alle Bilder ohne besondere Kennzeichnung wurden von kr0l gemacht*   
+**1 Die Fotos wurden Bearbeitet was Kontrast, Größe und Auflösung betrifft.*
+---
+pub_date: 2018-12-22 18:18
+---
+summary: Auch 2018 haben wir wieder das Chaos auf den Adventsbasar der Freien Waldorfschule Überlingen gebracht.
+---
+_hidden: no

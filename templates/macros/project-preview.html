@@ -1,0 +1,15 @@
+{% macro render_project_article(article, from_index=false) %}
+<section>
+    <a class="article-preview" href="{{ article|url }}">
+    <span class="image fit zoom-in">
+        {% if article.preview_picture %}
+            <img src="{{ article.preview_picture|url }}" alt="" />
+        {% else %}
+            <img src="../images/defaults/projects.png" alt="" />
+        {% endif %}
+    </span>
+    <h3>{{ article.title }}</h3>
+    {{ article.summary }}
+    </a>
+</section>
+{% endmacro %}

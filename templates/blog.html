@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% from "macros/preview-renderer.html" import render_blog_post %}
+{% from "macros/pagination.html" import render_pagination %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<section id="main" class="container">
+    <header>
+        <h2>{{ this.title }}</h2>
+		</header>
+    <div class="box">
+    	<a href="{{ '/feed.xml'|url }}" title="RSS Feed" class="icon fa-rss" style="float: right; color: inherit; font-size: 1.5em;"><span class="label">RSS Feed</span></a>
+        {% for child in this.pagination.items %}
+            {{ render_blog_post(child) }}
+        {% endfor %}
+
+        {{ render_pagination(this.pagination) }}
+    </div>
+</section>
+{% endblock %}

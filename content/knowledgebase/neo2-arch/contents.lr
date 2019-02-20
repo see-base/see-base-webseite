@@ -1,0 +1,36 @@
+title: Neo2 Keyboad Layout
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+Neo ist eine ergonomische Tastaturbelegung, welche für die deutsche Sprache optimiert ist. Daher gibt es einige Lebewesen, die der meinung sind, dass dieses Layout dem verbreiteten QWERTZ (oder QWERTY) Layout vorzuziehen ist.
+
+Auf der Seite <a href="https://www.neo-layout.org/">neo-layout.org</a> gibt es hierzu einige weiterführende Informationen sowie Anleitungen.
+
+Hier wiederum geht es darum, das Layout unter Arch Linux zu verwenden.
+
+Wie schon in der Anleitung <a href="/knowledgebase/ArchFromScratch/">Arch Linux Installieren</a> beschrieben, gibt es das Tool ''loadkeys'. Mit diesem lässt sich normalerweise jedes beliebige Keyboard Layout verwenden. Allerdings ist standardmäßig das neo2 Layout garnicht vorhanden.
+
+Im AUR gibt es das Packet <a href="https://aur.archlinux.org/packages/kbd-neo">kbd-neo</a>, welches versucht das Keyboardlayout hinzuzufügen. 
+
+Die kann man aber auch selber machen. Ein wichtiger Schritt ist hierfür das downloaden des Layoutes. (hier mit axel anstelle von wget):
+
+````
+sudo axel https://svn.neo-layout.org/linux/console/neo.map -o /usr/share/kbd/keymaps/i386/qwertz/neo.map
+````
+
+Nun kann man mit folgenden Befehlen das Keyboard Layout versuchen zu aktivieren:
+
+````
+sudo loadkeys neo
+
+sudo setxkbmap de neo -option
+````
+
+Für den Einstieg in Neo2 empfiehlt es sich, das keyboard Layout stets parat zu haben. Ganz nützlich hierbei können folgende Grafiken sein: <a href="https://wiki.neo-layout.org/wiki/Grafiken">wiki.neo-layout.org</a>.
+---
+category: Anleitung
+---
+description: Neo2  Layout unter Arch Einrichten
