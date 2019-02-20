@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/see-base/see-base-webseite.svg?branch=master)](https://travis-ci.org/see-base/see-base-webseite)
 
-[![see-base}(https://raw.githubusercontent.com/see-base/see-base-webseite/master/assets/images/background.svg)](https://see-base.de)
+[![see-base](https://see-base.de/images/background.svg)](https://see-base.de)
 
  Installation:
 ====================
@@ -111,7 +111,7 @@ sudo pacman -S imagemagic ruby-sass rsync git-lfs
 
 
  Projektstruktur
-========================0
+========================
 
 ```
     d assets                     - Dateien, die genau so in die Webseite übernommen werden (sinnvoll für css, js, default-bilder)
