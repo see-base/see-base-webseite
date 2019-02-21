@@ -101,7 +101,7 @@ Nun wird die verschlüsselte Partition geöffnet und das LVM eingerichtet:
 
 Mit mkfs wird nun das Dateisystem auf die Partitionen geschrieben:
 ````
-mkfs.ext4 -L root -/dev/mapper/main-root
+mkfs.ext4 -L root /dev/mapper/main-root
 mkswap -L swap /dev/mapper/main-swap
 mkfs.vfat -F32 /dev/sda1
 ````
@@ -150,7 +150,7 @@ vim /etc/mkinitcpio.conf
 Die MODULES- und HOOKS-Werte werden entsprechend angepasst:
 ````
 MODULES=(ext4)
-HOOKS= (base udev autodetect modconf block keyboard keymap encrypt lvm2 filesystems fsck shutdown)
+HOOKS=(base udev autodetect modconf block keyboard keymap encrypt lvm2 filesystems fsck shutdown)
 ````
 
 Hostename und Keybord anpassen:
