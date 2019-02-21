@@ -1,0 +1,48 @@
+title: see-base webseite + git
+---
+author: L3D
+---
+pub_date: 2019-02-21 01:42:00
+---
+summary:
+
+Die see-base hatte lange eine Webseite, die über einen geteilten Ordner in einer selber gehosteten Nextcloud gepflegt, aktualisiert und verwaltet wurde.
+
+Das hat sich heute geändert. Die see-base Webseite kann jetzt auch git!
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+Die Webseite eines Hackerspace ist eines der wichtigeren Aushängeschilder, das sich Menschen anschuen, die überlegen vorbei zu kommen.
+Und daher ist es auch wichtig, diese so leicht wie möglich aktualisierbar und erweiterbar zu halten und immer wieder Menschen zu motivieren, diese zu erweitern.
+
+Bisher war unser Konzept dafür, die see-base Webseite in einem geteilten Gruppenordner in einer selber gehosteten Nextcloud zur verfügung zu stellen. Der erstmal gute Gedanke, dass da ja jeder easy einfach so zugreifen kann, klang sehr gut.
+
+In der Realität war das aber nicht so. Menschen vergessen ihre Zugangsdaten oder sind gerade an einem Computer, wo sie die Cloud nicht synchronisieren können oder wollen. Oder sind mit dem Handy unterwegs und wollen mal eben kurz eine erinnerung oder Notiz oder Foto hinzufügen.
+
+Oder Menschen sind schon lange in der see-base dabei, aber keiner hat daran gedacht denen einen Cloud Zugang zu geben.
+
+### Neue strategie: git
+
+Die neue Strategie dafür heißt nun, wir packen die Webseite in ein öffentliches git.
+Möglichst so, dass viele Menschen die Webseite einfach sehen und bearbeiten können.
+
+Natürlich könnte man da das selber gehostete gitea nehmen, aber da wird auch wieder kaum jemand einen Zugang haben und die Einstiegshürde überhaupt etwas zu ändern ist zu hoch.
+
+Daher gibt es den Quelltext dieser Seite auf github:
+
+[github.com/see-base/see-base-webseite.git](https://github.com/see-base/see-base-webseite.git)
+
+
+### schicke Features
+Dank git ist es nun auch möglich, Änderungen an der Webseite vorzuschlagen, ohne dass diese direkt life sind.
+Außerdem muss man nicht jedem noch den Zugang zum Webserver einrichten um die Webseite zu updaten, sondern das wird über travis-ci.org übernommen.
+
+
+### Macht mit!
+Wer jetzt etwas zur Webseite beitragen möchte... kann das einfach machen.
+Im git steht eine schritt-für-schritt anleitung, die einem das meiste erklären sollte.
+
+Wenn ihr Fragen  zur Webseite habt, kommt doch mal persöhnlich oder im IRC vorbei und lasst uns drüber reden!
