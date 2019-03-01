@@ -195,6 +195,8 @@ $(ls -la /dev/disk/by-uuid | grep sda2 | cut -d" " -f10)\
 :lvm root=/dev/mapper/main-root quiet rw"> /boot/loader/entries/arch-encrypted-lvm.conf
 ````
 
+Bitte ``/boot/loader/entries/arch-encrypted-lvm.conf```nochmal überprüfen!
+
 <a href="https://wiki.archlinux.org/index.php/Systemd-boot">Quelle systemd-boot</a>
 
 
