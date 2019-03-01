@@ -58,6 +58,18 @@ Du benötigst eine Boot-Partition mit ca. 512MB mit dem Typ: ``EFI System``.
 Und den restlichen Speicherplatz der Festplatte(n) für das LVM mit dem ``Linux filesystem``.
 
 
+#### Probleme?
+Manchmal ist auch die Partitonierung mit gdisk eine bessere Wahl. [Weiter Infos hier](https://wiki.archlinux.de/title/GPT)
+
+Einige nützliche Codes:
+```
+ef02 - Bios Boot partition
+8200 - Linux SWAP
+8300 - Linux filesystem 
+```
+
+### Formatieren
+
 Und natürlich die Festplatten noch ordentlich Formatieren mit dem ``shred`` Befehl z.B.:
 
 ````
@@ -182,6 +194,8 @@ echo -e "title Arch Linux Encrypted\
 $(ls -la /dev/disk/by-uuid | grep sda2 | cut -d" " -f10)\
 :lvm root=/dev/mapper/main-root quiet rw"> /boot/loader/entries/arch-encrypted-lvm.conf
 ````
+
+Bitte ``/boot/loader/entries/arch-encrypted-lvm.conf```nochmal überprüfen!
 
 <a href="https://wiki.archlinux.org/index.php/Systemd-boot">Quelle systemd-boot</a>
 
