@@ -1,0 +1,93 @@
+title: Passwort Manager
+---
+body_blocks:
+
+#### body_text ####
+text:
+
+ The Standard Unix Password Manager: Pass
+-----------------------------------------------
+
+Passwortverwaltung sollte einfach sein und der Unix-Philosophie folgen. 
+
+Mit pass als Passwort Manager lebt jedes Passwort in einer gpg-verschlüsselten Datei, deren Dateiname der Titel der Website oder Ressource ist, die das Passwort benötigt. Diese verschlüsselten Dateien können in sinnvollen Ordnerhierarchien organisiert, von Computer zu Computer kopiert und im Allgemeinen mit Hilfe von Standard-Befehlszeilenprogrammen zur Dateiverwaltung bearbeitet werden.
+
+Weitere Informationen zu pass gibt es auf [passwordstore.org](https://www.passwordstore.org/).
+
+```bash
+apt update
+apt install pass qtpass
+```
+
+ GnuPG
+---------------------------
+Pass verwendet gpg als Methode zur Verschlüsselung. GPG funktioniert normalerweise mit asymetrischer Kryptografie. Es gibt also öffentliche und private Schlüssel. Die öffentlichen Schlüssel werden zum verschlüsseln genutzt und nur die dazu passenden privaten Schlüssel können die Nachricht wieder entschlüsseln.
+
+Wie man einen GPG Schlüssel erstellt ist auf [vielen Seiten](https://howtopgp.jugendhackt.de/#/) schon gut erklärt:
+```bash
+# generate key
+gpg2 --full-gen-key 
+
+# list secret keys
+gpg2 --list-secret-keys
+```
+
+Um den Passwort Manager zu iniziieren, verwendet man den Befehl:
+```bash
+pass init "My password store" my-gpg-id-or-gpg-mail-address
+```
+
+ Mehrere Benutzer
+-----------------------------
+In der Datei .gpg-id (`` ~/.passwordstore/.gpg-id ``) stehen alle UIDs, die auf die hier gespeicherten Passwörter zugriff haben sollen.
+Dies könnte so aussehen:
+```
+alice@acme.org
+jane@acme.org
+bob@acme.org
+212FC4D1C64D1DE9FF4D6DD35215C3441797AB2B
+```
+
+Wichtig hierbei ist, dass die öffentlichen GPG Schlüssel der Personen lokal verfügbar sind und als vertrauenswürdig signiert wurden.
+Das geht mit einem grafischen Client *(z.B. ``gpa`` or ``seahorse``)*  oder per Komandozeile.
+
+```bash
+$ gpg --edit-key jane@acme.org
+
+gpg> lsign
+gpg> y
+gpg> save
+```
+
+Nach dem ändern der Liste muss pass die keys neu verschlüsseln um den neuen usern auch zugriff zu geben:
+```
+pass init -p $(cat ~/.password-store/.gpg-id)
+```
+
+## Protipp:
+Es gibt womöglich Passwörter, die du auf dem Handy haben willst. Aber du willst deinen überall verwendeten GPG Key nicht aufs Handy kopieren?
+Mach dir einen zweiten nur fürs Handy!
+Pass gibt es auch für mobile Plattformen!
+
+## browser support
+Es gibt für alle gängigen Browsers passende Plugins. Zum Beispiel. [passff](https://github.com/passff/passff#readme) für Firefox.
+
+
+ synchronisierung
+----------------
+pass unterstützt die integration mit git. So können Passwörter nicht nur lokal gespeichert werden, sondern auch über git auf jede beliebige Plattform synchronisiert werden. Da die Passwörter verschlüsselt gespeichert sind, ist es auch kein großes Risiko seine Passwörter an anderen orten zu speichern, als an seinem eigenen Computer.
+
+Wer (aus guten gründen) nicht github.com oder gitlab.com als git Server verwenden möchte, kann auch den von der see-base gehosteten git server verwenden: [gitea.see-base.de](https://gitea.see-base.de)
+
+```bash
+zx2c4@laptop ~ $ pass git init
+Initialized empty Git repository in /home/zx2c4/.password-store/.git/
+zx2c4@laptop ~ $ pass git remote add origin kexec.com:pass-store
+```
+### Protipp: 
+Es können auch mehrere Repos verwendet werden. Hierbei ist zwar etwas handarbeit beim synchronisieren fällig.
+Hierfür einfach nicht ``~/.password-store/`` als git Repo einrichten sondern die Unterordner. ZB.   ``~/.password-store/foo/``
+---
+category: Anleitung
+---
+description: Passwörter sicher verschlüsseln. Alleine oder als Team.
