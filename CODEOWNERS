@@ -1,0 +1,9 @@
+# 
+# This file describes the CODEOWNERS from the
+# Github Repository of the see-base website.
+#
+# for every part of the website - inclusive templates and config
+* @do1jlr
+#
+# for the content of the page
+content/* @TalviT @kr0l @mart-ffbsee
