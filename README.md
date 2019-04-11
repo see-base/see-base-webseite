@@ -69,7 +69,7 @@ sudo pacman -S imagemagic ruby-sass rsync git-lfs
  Als see-base Mitglied auf github die Webseite bearbeiten:
 -------------------------------------------------
 
-1.  Dieses Repository clonen (`` git lfs clone git@github.com:ToolboxBodensee/see-base-webseite.git``)
+1.  Dieses Repository clonen (`` git lfs clone git@github.com:see-base/see-base-webseite.git``)
 2.  Neuen branch erstellen (``git checkout -b NEUER_BRANCH``)
 4.  Lektor starten (``lektor server``)
 5.  Webseite updaten... (``http://localhost:5000/``)
