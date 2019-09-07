@@ -3,23 +3,18 @@ LEKTOR_SERVER_FLAGS=-h 127.0.0.1
 all: build
 
 sass:
-	sass -t compressed ./assets/sass/main.scss ./assets/css/main.min.css
-	rm ./assets/css/main.min.css.map
 	lektor clean --yes
-	lektor build
+	lektor build -f sass
 
 sass-uncompressed:
-	sass ./assets/sass/main.scss ./assets/css/main.css
-	rm ./assets/css/main.css.map
 	lektor clean --yes
-	lektor build
+	lektor build -f sass
 
 install:
 	pip install lektor
-	gem install sass
 
 build: sass
-	lektor build
+	lektor build -f sass
 
 server:
 	lektor server $(LEKTOR_SERVER_FLAGS)
