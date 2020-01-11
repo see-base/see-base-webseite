@@ -14,39 +14,14 @@
 
  * lektor - Der Static-Site Generator & CMS
  * git-lfs - Git mit unterstützung für große binärblobs
- * sassc  - Precompiler für CSS-Dateien ***(optional)***
  * rsync  - Zum deployen ***(optional)***
  * imagemagic - wird von lektor für bilder verwendet
 
-### Installationsanleitung:
-
-#### Debian/Ubuntu:
-```bash
-# Installiere pip3:
-sudo apt update
-sudo apt install python3-pip
-
-# installiere lektor
-pip3 install lektor --user
-
-# installiere abhängigkeiten:
-sudo apt install imagemagic ruby-sass rsync
-
-# installiere git-lfs
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+### Installationsanleitung: *(Linux/Unix)*
 ```
-
-#### Archlinux
-```
-# Installiere pip3:
-sudo pacman -Suy
-sudo pacman -S python-pip
-
-# installiere lektor
-pip3 install lektor --user
-
-# installiere abhängigkeiten:
-sudo pacman -S imagemagic ruby-sass rsync git-lfs
+git clone https://github.com/see-base/see-base-webseite.git
+cd see-base-webseite
+make install
 ```
 
 
