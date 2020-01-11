@@ -12,3 +12,4 @@ target = rsync://web7@saturn.see-base.de/var/www/clients/client1/web7/web
 
 [packages]
 lektor-atom = 0.3
+lektor-scss = 1.3.6
