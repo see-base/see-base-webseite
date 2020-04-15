@@ -10,15 +10,32 @@ body_blocks:
 text:
 
 
-## Installataion von Arch Linux mit crypto und lvm
+## Installataion von Arch Linux
++ Mit verschlüsselter Festplatte
++ Mit LVM
++ Mit systemd-boot (UEFI) 
 
+Hier findet ihr eine deutschsprachige Anleitung, wie ihr Arch Linux von Grund auf installieren könnt.
 
-Hier findet ihr eine deutschsprachige Anleitung, wie ihr Arch Linux von Grund auf installieren könnt. Mit verschlüsselter Festplatte und lvm. Diese Anleitung hat die wichtigsten Befehle aus anderen Anleitung zusammen extrahiert um die möglichkeit zu schaffen Arch Linux zu installiern. Und zwar mit Verschlüsselter Festplatte in einem LVM. Diese Anleitung soll als Hilfe dienen wenn man sein System neu aufsetzen möchte oder bestimmte Teile nicht mehr funktionieren. Zum Beispiel wenn man sein Bootloader versehendlich zerstört hat und diesen Neu einrichten will. Es empfielt sich dieser Anleitung zu folgen, während man am Kabelgebundenen Internet hängt. Für WLAN hilft einem sonst auch der Befehl ``wifi-menu`` weiter...
-Was diese Anleitung nicht enthält ist der Teil der GUI. Aber wenn man erstmal bis dahinn gekommen ist, ist dies meistens nicht mehr so schwer. Und wo man da weiter Recherchieren muss ist selbstverständlich verlinkt! Gerne helfen wir euch hierbei aber auch bei uns im Hackerspace weiter. Hier auf see-base.de findest du Informationen, wann wir uns treffen und wie du uns erreichen kannst.
+**Beachtet bitte,** das dies keine allgemein gültige Anleitung für alle Usecase ist, sondern explizit und nur für den Fall funktioniert, das ihr euer System zum Beispiel mit verschlüsselten LVM einrichten wollt. Und auch nicht mit GRUB2 booten wollt sondern systemd-boot verwenden wollt.
 
-Beginnen wir also mal damit, das richtige Image auf einen USB Stick zu "kopieren".
+Dafür funktioniert diese samlung an copy + paste befehlen. Aber für alles andere verwendet bitte **unbedingt** die offizielle Doku als primärquelle und nicht wie hier nur zur ergänzung.
 
-<h3>Arch ISO auf USB</h3>
+Diese Anleitung empfiehlt ein zweiten (Linux-) Rechner um von dort aus sich die Befehle zu copy + pasten, im Arch Wiki nachzuschlagen und nicht alles von Hand aptippen zu müssen.
+
+## Vorgehensweise
++ USB Stick vorbereiten und davon Booten
++ Deutsch Tastaturbelegung
++ SSHD aktivieren und einloggen
++ Partionierung
++ Verschlüsseltes LVM einrichten
++ Dateisystem
++ Sprache
++ Kernel
++ Systemd-Boot
++ reboot
+
+<h3>USB Stick vorbereiten und davon Booten</h3>
 
 Kopiere das neuste Arch image von <a href="https://www.archlinux.de/">archlinux.de</a> mit dd auf deinen USB Stick. Natürlich muss hier nicht /dev/usbstick angegeben werden sondern der Pfad zu deinem USBStick. Diesen bekommt man beispielsweise mit dem Programm ''lsblk'' raus. Er kann zB. ''/dev/sdb'' heißen.
 
@@ -26,6 +43,9 @@ Kopiere das neuste Arch image von <a href="https://www.archlinux.de/">archlinux.
 sudo dd if=/pfad/zum/arch.iso bs=4M status=progres of=/dev/usbstick
 ````
 Anschließend auf den USB Stick booten.
+Achte hierbei **unbedingt** darauf per UEFI zu booten und nicht über dieses legacy boot.
+
+Deaktiviere ggf. legacy-boot im BIOS und auch die secureboot mechanismen im BIOS!
 
  <h3>Deutsch Tastaturbelegung</h3>
 
@@ -34,7 +54,7 @@ loadkeys de-latin1
 ````
 *Im Englischen Tatstaturlayout sind y und z vertauscht.*
 
-<h3>SSH Server Starten</h3>
+<h3>SSHD aktivieren und einloggen</h3>
 
 Starte den SSH Daemon um dich von einem anderen Rechner (von dem man copy und paste bedienen kann) auf der Maschine zur Neuinstallation anzumelden. 
 ````
@@ -43,6 +63,8 @@ systemctl start sshd.service
 Gebe dem root noch mit ``passwd`` ein Passwort.
 
 Falls der Laptop keine IP hat, die Verkabelung aber passt kann man mit ``dhcpcd`` eine IP per DHCP holen. <a href="https://wiki.archlinux.org/index.php/Install_from_SSH">Quelle SSHD</a>
+
+Solltest du dich nur per WLAN verbinden zu können, kannst du dich per wifi-menu anmelden... Allerdings musst du selber wissen wie du das WLAN auf deinem System einrichtest und es ist dringend ein Kabel empfohlen!!!
 
  <h3>Partitionierung</h3>
 
@@ -64,9 +86,12 @@ Manchmal ist auch die Partitonierung mit gdisk eine bessere Wahl. [Weiter Infos 
 Einige nützliche Codes:
 ```
 ef02 - Bios Boot partition
+ef00 - EFI system partition
 8200 - Linux SWAP
 8300 - Linux filesystem 
 ```
+
+**ACHTUNG** die Partition zum booten muss eine EFI Partition (ef00) sein!
 
 ### Formatieren
 
@@ -131,7 +156,7 @@ mount /dev/sda1 /mnt/boot
 Basissystem installieren:
 
 ````
-pacstrap /mnt base base-devel vim dialog wpa_supplicant networkmanager tmux
+pacstrap /mnt base base-devel vim dialog wpa_supplicant networkmanager tmux lvm2
 # SWAP altivieren:
 swapon -L swap
 genfstab -U -p /mnt >> /mnt/etc/fstab
@@ -153,6 +178,15 @@ Die Zeitzone Einstellen:
 ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 ````
 
+<h3>Kernel</h3>
+
+Installiere einen [Kernel](https://wiki.archlinux.org/index.php/Kernel)
+
+```
+sudo pacman -S linux
+```
+
+
 /etc/mkinitcpio.conf wird angepasst:
 
 ````
@@ -168,15 +202,21 @@ HOOKS=(base udev autodetect modconf block keyboard keymap encrypt lvm2 filesyste
 Hostename und Keybord anpassen:
 
 ````
-echo myhostname >> /etc/hostname
+hostnamectl set-hostname <your_hostname>
 echo KEYMAP=de-latin1 >> /etc/vconsole.conf
 ````
-Die Einträge mit ``de_DE*`` in der ``/etc/locale.gen`` einkommentieren und dann mit ``locale-gen`` aktivieren.
+Die Einträge mit ``de_DE*`` in der 
+```
+/etc/locale.gen
+```
+einkommentieren und dann mit ``locale-gen`` aktivieren.
 
  Kernel-Image erstellen:
 --------
-``mkinitcpio -p linux``
-``systemctl enable dhcpcd.service``
+```
+mkinitcpio -p linux
+systemctl enable dhcpcd.service
+```
 
 
 
@@ -191,11 +231,11 @@ Den bootloader-Eintrag erstellen. Z.B.:
 echo -e "title Arch Linux Encrypted\
 \nlinux /vmlinuz-linux\ninitrd /initramfs-linux.img\
 \noptions cryptdevice=UUID=\
-$(ls -la /dev/disk/by-uuid | grep sda2 | cut -d" " -f10)\
+$(ls -la /dev/disk/by-uuid | grep sda2 | cut -d" " -f11)\
 :lvm root=/dev/mapper/main-root quiet rw"> /boot/loader/entries/arch-encrypted-lvm.conf
 ````
 
-Bitte ``/boot/loader/entries/arch-encrypted-lvm.conf```nochmal überprüfen!
+Bitte ``/boot/loader/entries/arch-encrypted-lvm.conf`` nochmal überprüfen!
 
 <a href="https://wiki.archlinux.org/index.php/Systemd-boot">Quelle systemd-boot</a>
 
