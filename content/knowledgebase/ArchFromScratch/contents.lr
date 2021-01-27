@@ -13,7 +13,7 @@ text:
 ## Installataion von Arch Linux
 + Mit verschlüsselter Festplatte
 + Mit LVM
-+ Mit systemd-boot (UEFI) 
++ Mit systemd-boot (UEFI)
 
 Hier findet ihr eine deutschsprachige Anleitung, wie ihr Arch Linux von Grund auf installieren könnt.
 
@@ -56,7 +56,7 @@ loadkeys de-latin1
 
 <h3>SSHD aktivieren und einloggen</h3>
 
-Starte den SSH Daemon um dich von einem anderen Rechner (von dem man copy und paste bedienen kann) auf der Maschine zur Neuinstallation anzumelden. 
+Starte den SSH Daemon um dich von einem anderen Rechner (von dem man copy und paste bedienen kann) auf der Maschine zur Neuinstallation anzumelden.
 ````
 systemctl start sshd.service
 ````
@@ -88,7 +88,7 @@ Einige nützliche Codes:
 ef02 - Bios Boot partition
 ef00 - EFI system partition
 8200 - Linux SWAP
-8300 - Linux filesystem 
+8300 - Linux filesystem
 ```
 
 **ACHTUNG** die Partition zum booten muss eine EFI Partition (ef00) sein!
@@ -231,7 +231,7 @@ Den bootloader-Eintrag erstellen. Z.B.:
 echo -e "title Arch Linux Encrypted\
 \nlinux /vmlinuz-linux\ninitrd /initramfs-linux.img\
 \noptions cryptdevice=UUID=\
-$(ls -la /dev/disk/by-uuid | grep sda2 | cut -d" " -f11)\
+$(ls -la /dev/disk/by-uuid | grep sda2 | cut -d" " -f10)\
 :lvm root=/dev/mapper/main-root quiet rw"> /boot/loader/entries/arch-encrypted-lvm.conf
 ````
 
@@ -251,7 +251,7 @@ reboot
 <h3>Neues System einrichten</h3>
 
 
-Nun sollte das System mit UEFI Booten und das Passwort für /dev/sda2 automagisch verlangen. 
+Nun sollte das System mit UEFI Booten und das Passwort für /dev/sda2 automagisch verlangen.
 Dort geht es dann erstmal darum das System einzurichten...
 
 ````
@@ -275,7 +275,7 @@ echo -e "set expandtab\nset tabstop=4\
 ````
 
 <h3>Arch User Repository</h3>
-Das ArchLinux User-Community Repository  ist eine Sammlung von Paketbau-Anleitungen (den PKGBUILDs) anhand derer Programmpakete für Arch Linux mittels ABS erstellt werden können. Jeder kann dort seine Pakete nach einer Registrierung veröffentlichen und anderen zur Verfügung stellen. 
+Das ArchLinux User-Community Repository  ist eine Sammlung von Paketbau-Anleitungen (den PKGBUILDs) anhand derer Programmpakete für Arch Linux mittels ABS erstellt werden können. Jeder kann dort seine Pakete nach einer Registrierung veröffentlichen und anderen zur Verfügung stellen.
 
 Diese Kann man über helfer installieren. Eine liste der aktiv entwickelten AUR Helfer gibt es auf <a href="https://wiki.archlinux.org/index.php/AUR_helpers">wiki.archlinux.org</a>
 
@@ -291,7 +291,7 @@ Natürlich braucht man dafür <a href="https://wiki.archlinux.org/index.php/Xorg
 
 Hier gibt es noch ganz andere Religinen und Meinungen, was denn nun die richtige Desktop-Oberfläche ist. Und um da jedem die eigenen Erfahrungen und Entscheidungen machen lassen zu können ist hier nun keine so ausführlichere Anleitung mehr. Sorry.
 
-Grob gesagt geht es weiter damit, dass man die Arch Wiki Seite seiner lieblings Desktop-Oberfläche aufruft.. Dort steht in der Regel wie man das Installiert. Normalerweise wird dabei immer ein X-System benötigt und die Oberfläche (zB. KDE) selber... 
+Grob gesagt geht es weiter damit, dass man die Arch Wiki Seite seiner lieblings Desktop-Oberfläche aufruft.. Dort steht in der Regel wie man das Installiert. Normalerweise wird dabei immer ein X-System benötigt und die Oberfläche (zB. KDE) selber...
 
 Probiere es doch mal aus und berichte von deinen Erfahrungen!
 ---
