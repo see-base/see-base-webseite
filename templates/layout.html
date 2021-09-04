@@ -1,5 +1,5 @@
-{% set fqdn = "see-base.de" 
-%}<!DOCTYPE html>
+{%- set fqdn = "see-base.de" -%}
+<!DOCTYPE html>
 <html lang="de">
     <head>
         <meta charset="utf-8">
@@ -11,13 +11,17 @@
         <link rel="stylesheet" href="{{ '/fonts/roboto.css'|asseturl }}" />
         <link rel="stylesheet" href="https://see-base.de/css/space_api.css" />{%
     endif %}
-        <link rel="stylesheet" href={%
-        if '/css/main.min.css'|asseturl == empty %}{%
-            if '/css/main.css'|asseturl == empty %}"https://{{ fqdn }}/css/main.min.css"{%
-            else %}"{{ '/css/main.css'|asseturl }}"{%
-            endif %}{%
-        else %}"{{ '/css/main.min.css'|asseturl }}"{%
-        endif %} /> 
+        <link rel="stylesheet" href=
+          {%- if '/css/main.min.css'|asseturl == empty -%}
+            {%- if '/css/main.css'|asseturl == empty -%}
+              "https://{{ fqdn }}/css/main.min.css"
+            {%- else -%}
+              "{{ '/css/main.css'|asseturl }}"
+            {%- endif -%}
+          {%- else -%}
+            "{{ '/css/main.min.css'|asseturl }}"
+          {%- endif -%}
+        />
         <link rel="icon" href="{{ '/images/favicon.png'|asseturl }}" type="image/png">
     </head>
     <body{% if this._path == '/' %} class="landing"{% endif %}>
@@ -34,7 +38,7 @@
                            <li {% if this._path == '/datenschutz' %}class="active"{% endif %}{% if this._path == "/impressum" %}class="active"{% endif %}{% if this.is_child_of(item.path) %} class="active"{% endif %}>
                                 <a href="{{ item.path|url }}">{{ item.label }}</a>
                                   <ul><li{% if this.is_child_of(item.path) %} class="active"{% endif %}>
-                                    <a href="/kontakt">Kontakt</a> 
+                                    <a href="/kontakt">Kontakt</a>
                                   </li><li{% if this._path == '/datenschutz' %} class="active"{% endif %}>
                                     <a href="/datenschutz">Datenschutz</a>
                                   </li><li{% if this._path == '/impressum' %} class="active"{% endif %}>
