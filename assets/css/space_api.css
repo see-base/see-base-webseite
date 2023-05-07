@@ -1,0 +1,3 @@
+#header h1 a.icon::before { color: red; }
+#sb-opened { display: none !important; }
+#sb-closed { display: block; }
