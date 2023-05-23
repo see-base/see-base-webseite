@@ -8,7 +8,7 @@ url = https://see-base.de/
 url_style = absolute
 enabled = yes
 default = yes
-target = rsync://web7@saturn.see-base.de/var/www/clients/client1/web7/web
+target = rsync://see@see-base.de/srv/www/see-base.de/
 
 [packages]
 lektor-scss = 1.4.1
