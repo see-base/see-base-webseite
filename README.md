@@ -2,8 +2,6 @@
 ===================
 ### *für die see-base Webseite*
 
-[![Build Status](https://travis-ci.org/see-base/see-base-webseite.svg?branch=master)](https://travis-ci.org/see-base/see-base-webseite)
-
 [![see-base](https://see-base.de/images/background.svg)](https://see-base.de)
 
  Installation:
